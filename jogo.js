@@ -27,6 +27,7 @@ let prot,v1,v2,v3;
 var xi = 400;
 var yi = 400;
 var opcoes = [0,1];
+var xv1=10, xv2=600,xv3=900;
 
 var tileSize=50;
 
