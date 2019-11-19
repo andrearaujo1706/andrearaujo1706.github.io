@@ -133,32 +133,32 @@ function draw() {
 
 function moverVilao(){
   
-  if(xv1  <900 && ve1==1){
-    xv1=xv1+5
+  if(xv1  <850==1){
+    xv1=xv1+2
   }else{
     ve1=0
-    xv1--;
-    if(xv1 <=0){
+    xv1=xv1-7
+    if(xv1 <=5){
       ve1=1;
     }
   }
 
-  if(xv2  <900 && ve2==1){
+  if(xv2  <850 ve2==1){
     xv2=xv2+5
   }else{
     ve2=0
-    xv2--;
-    if(xv2 <=0){
+    xv2=xv2+5
+    if(xv2 <=5){
       ve2=1;
     }
   }
 
-  if(xv3  < 900 && ve3==1){
-    xv3=xv3+5
+  if(xv3  < 850 ve3==1){
+    xv3=xv3+6
   }else{
     ve3=0
-    xv3--;
-    if(xv3 <= 0){
+    xv3--
+    if(xv3 <= 5){
       ve3=1;
     }
   }
