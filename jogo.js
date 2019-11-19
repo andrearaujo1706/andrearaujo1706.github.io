@@ -147,7 +147,7 @@ function moverVilao(){
     xv2=xv2+5
   }else{
     ve2=0
-    xv2=xv2+5
+    xv2=xv2-5
     if(xv2 <=5){
       ve2=1;
     }
