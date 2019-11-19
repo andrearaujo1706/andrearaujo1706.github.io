@@ -16,7 +16,7 @@ let map = [
 ];
     
 var x = 20;
-var y = 480;
+var y = 465;
 var y_teste=0;
 var pontuacao =1;
 
@@ -72,7 +72,7 @@ function draw() {
   
   if (keyIsDown(UP_ARROW)&& !bateuNoMapa(x,y-5) ) {
         //y-=5;  
-        if(y==480){
+        if(y==465){
           y_teste=1;}
 
 
@@ -84,7 +84,7 @@ function draw() {
       y_teste=0  
     }
   }
-  if(y<480 && y_teste==0){
+  if(y<465 && y_teste==0){
     y=y+12;
   }
 
@@ -129,5 +129,5 @@ function draw() {
 
   function fase1() {
     image(mapa1, 0, 0, 900, 650);
-    image(prot, x, y, 48,75);
+    image(prot, x, y, 48,85);
   }
