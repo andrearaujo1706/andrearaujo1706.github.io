@@ -138,7 +138,7 @@ function moverVilao(){
   }else{
     ve1=0
     xv1= xv1-5;
-    if(xv1 == Math.random(0, 500)){
+    if(xv1 <= Math.random(0, 500)){
       ve1=1;
     }
   }
@@ -148,7 +148,7 @@ function moverVilao(){
   }else{
     ve2=0
     xv2=xv2-5;
-    if(xv2 == Math.random(0,500)){
+    if(xv2 <= Math.random(0,500)){
       ve2=1;
     }
   }
@@ -158,7 +158,7 @@ function moverVilao(){
   }else{
     ve3=0
     xv3=xv3-5;
-    if(xv3 == Math.random(0,500)){
+    if(xv3 <= Math.random(0,500)){
       ve3=1;
     }
   }
