@@ -29,7 +29,7 @@ var opcoes = [0,1];
 var tileSize=50;
 
 function preload() {
-  mapa1 = loadImage('img/mapa/mapa 1.jpg');
+  mapa1 = loadImage('img/mapa/mapa1.jpg');
   mapa2 = loadImage('img/mapa/mapa2.jpg');
   mapa3 = loadImage('img/mapa/mapa3.jpg');
 }
