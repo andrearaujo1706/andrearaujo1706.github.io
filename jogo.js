@@ -22,6 +22,7 @@ var pontuacao =1;
 
 
 let mapa1,mapa2,mapa3;
+let prot,v1,v2,v3;
 var xi = 400;
 var yi = 400;
 var opcoes = [0,1];
@@ -32,13 +33,17 @@ function preload() {
   mapa1 = loadImage('img/mapa/mapa1.jpg');
   mapa2 = loadImage('img/mapa/mapa2.jpg');
   mapa3 = loadImage('img/mapa/mapa3.jpg');
+  prot = loadImage('img/personagens/prot.png');
+  v1 = loadImage('img/personagens/vilao1.png');
+  v2 = loadImage('img/personagens/vilao2.png');
+  v3 = loadImage('img/personagens/vilao3.png');
 }
 function setup() {
   createCanvas(900, 650);
 }
 
 function draw() {
-
+    background(200);
     if(pontuacao==1){
       fase1();
     }
@@ -88,9 +93,9 @@ function draw() {
 
 
     fill(0, 0, 500);
-  rect(x, y, 48, 48);
+  
   fill(0, 0, 500);
-  rect(x, y, 48, 48);
+  
   
 
  
@@ -124,4 +129,5 @@ function draw() {
 
   function fase1() {
     image(mapa1, 0, 0, 900, 650);
+    image(prot, x, y, 48,60);
   }
