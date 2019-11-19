@@ -19,6 +19,9 @@ var x = 20;
 var y = 465;
 var y_teste=0;
 var pontuacao =1;
+var ve1 = 1;
+var ve2 = 0;
+var ve3 = 1;
 
 
 let mapa1,mapa2,mapa3;
@@ -127,3 +130,45 @@ function draw() {
     image(mapa1, 0, 0, 900, 650);
     image(prot, x, y, 48,85);
   }
+
+function Vilao(xv1,xv2,xc3){
+  image(v1, xv1, 465, 48,85);
+  image(v2, xv2, 465, 48,85);
+  image(v3, xv3, 465, 48,85);
+}
+
+function moverVilao(){
+  
+  if(xv1  < 900 && ve1==1){
+    xv1=xv1+5
+  }else{
+    ve1=0
+    xv1= xv1-5;
+    if(xv1 == 2){
+      ve1=1;
+    }
+  }
+
+  if(xv2  < 900 && ve2==1){
+    xv2=xv2+5
+  }else{
+    ve2=0
+    xv2=xv2-5;
+    if(xv2 == 2){
+      ve2=1;
+    }
+  }
+
+  if(xv3  < 900 && ve3==1){
+    xv3=xv3+5
+  }else{
+    ve3=0
+    xv3=xv3-5;
+    if(xv3 == 2){
+      ve3=1;
+    }
+  }
+
+  Vilao(xv1,xv2,xv3);
+
+}
