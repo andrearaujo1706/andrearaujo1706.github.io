@@ -134,36 +134,36 @@ function draw() {
 
 function moverVilao(){
   
-  if(xv1  < 900 && ve1==1){
+  if(xv1  < Math.random(900) && ve1==1){
     xv1=xv1+5
   }else{
     ve1=0
     xv1= xv1-5;
-    if(xv1 == 2){
+    if(xv1 == Math.random(900)){
       ve1=1;
     }
   }
 
-  if(xv2  < 900 && ve2==1){
+  if(xv2  < Math.random(900) && ve2==1){
     xv2=xv2+5
   }else{
     ve2=0
     xv2=xv2-5;
-    if(xv2 == 2){
+    if(xv2 == Math.random(900)){
       ve2=1;
     }
   }
 
-  if(xv3  < 900 && ve3==1){
+  if(xv3  < Math.random(900) && ve3==1){
     xv3=xv3+5
   }else{
     ve3=0
     xv3=xv3-5;
-    if(xv3 == 2){
+    if(xv3 == Math.random(900)){
       ve3=1;
     }
   }
   image(v1, xv1, 465, 48,85);
-  image(v2, xv2, 465, 48,85);
-  image(v3, xv3, 465, 48,85);
+  image(v1, xv2, 465, 48,85);
+  image(v1, xv3, 465, 48,85);
 }
