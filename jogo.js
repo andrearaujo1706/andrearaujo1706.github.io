@@ -22,7 +22,7 @@ var pontuacao =1;
 var ve1 = 1;
 var ve2 = 0;
 var ve3 = 1;
-var xv1=5,xv2=10, vx3=20;
+var xv1=5,xv2=10, xv3=20;
 
 let mapa1,mapa2,mapa3;
 let prot,v1,v2,v3;
