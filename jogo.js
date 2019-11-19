@@ -29,9 +29,9 @@ var opcoes = [0,1];
 var tileSize=50;
 
 function preload() {
-  mapa1 = loadImage('img/mapa/mapa1.png');
-  mapa2 = loadImage('img/mapa/mapa2.png');
-  mapa3 = loadImage('img/mapa/mapa3.png');
+  mapa1 = loadImage('img/mapa/mapa 1.jpg');
+  mapa2 = loadImage('img/mapa/mapa2.jpg');
+  mapa3 = loadImage('img/mapa/mapa3.jpg');
 }
 function setup() {
   createCanvas(900, 650);
@@ -43,7 +43,7 @@ function draw() {
       fase1();
     }
 
-  background(200);
+  
   fill(100, 50, 0);
   for (let i = 0; i < map.length; i++) {
     for (let j = 0; j < map[i].length; j++) {
