@@ -134,7 +134,7 @@ function draw() {
 function moverVilao(){
   
   if(xv1  == Math.random(900) && ve1==1){
-    xv1=xv1+5
+    xv1=xv1+20
   }else{
     ve1=0
     xv1--;
@@ -144,7 +144,7 @@ function moverVilao(){
   }
 
   if(xv2  <= Math.random(900) && ve2==1){
-    xv2=xv2+5
+    xv2=xv2+20
   }else{
     ve2=0
     xv2--;
@@ -154,7 +154,7 @@ function moverVilao(){
   }
 
   if(xv3  < 900 && ve3==1){
-    xv3=xv3+5
+    xv3=xv3+20
   }else{
     ve3=0
     xv3--;
