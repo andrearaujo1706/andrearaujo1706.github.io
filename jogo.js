@@ -133,7 +133,7 @@ function draw() {
 
 function moverVilao(){
   
-  if(xv1  <850==1){
+  if(xv1  <850 && ve1==1){
     xv1=xv1+2
   }else{
     ve1=0
@@ -143,7 +143,7 @@ function moverVilao(){
     }
   }
 
-  if(xv2  <850 ve2==1){
+  if(xv2  <850 && ve2==1){
     xv2=xv2+5
   }else{
     ve2=0
@@ -153,7 +153,7 @@ function moverVilao(){
     }
   }
 
-  if(xv3  < 850 ve3==1){
+  if(xv3  < 850 && ve3==1){
     xv3=xv3+6
   }else{
     ve3=0
