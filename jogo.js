@@ -18,21 +18,31 @@ let map = [
 var x = 20;
 var y = 501;
 var y_teste=0;
+var pontuacao =1;
 
 
-
+let mapa1,mapa2,mapa3;
 var xi = 400;
 var yi = 400;
 var opcoes = [0,1];
 
 var tileSize=50;
 
-
+function preload() {
+  mapa1 = loadImage('img/mapa/mapa1.png');
+  mapa2 = loadImage('img/mapa/mapa2.png');
+  mapa3 = loadImage('img/mapa/mapa3.png');
+}
 function setup() {
   createCanvas(900, 650);
 }
 
 function draw() {
+
+    if(pontuacao==1){
+      fase1();
+    }
+
   background(200);
   fill(100, 50, 0);
   for (let i = 0; i < map.length; i++) {
@@ -111,3 +121,7 @@ function draw() {
                     return false;
                 return true;
             }
+
+  function fase1() {
+    image(mapa1, 0, 0, 900, 650);
+  }
