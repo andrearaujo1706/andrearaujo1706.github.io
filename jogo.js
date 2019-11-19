@@ -129,5 +129,5 @@ function draw() {
 
   function fase1() {
     image(mapa1, 0, 0, 900, 650);
-    image(prot, x, y, 48,60);
+    image(prot, x, y, 48,70);
   }
