@@ -129,13 +129,8 @@ function draw() {
   function fase1() {
     image(mapa1, 0, 0, 900, 650);
     image(prot, x, y, 48,85);
+    moverVilao();
   }
-
-function Vilao(xv1,xv2,xc3){
-  image(v1, xv1, 465, 48,85);
-  image(v2, xv2, 465, 48,85);
-  image(v3, xv3, 465, 48,85);
-}
 
 function moverVilao(){
   
@@ -168,7 +163,7 @@ function moverVilao(){
       ve3=1;
     }
   }
-
-  Vilao(xv1,xv2,xv3);
-
+  image(v1, xv1, 465, 48,85);
+  image(v2, xv2, 465, 48,85);
+  image(v3, xv3, 465, 48,85);
 }
