@@ -88,11 +88,7 @@ function draw() {
     y=y+12;
   }
 
-  if (keyIsDown(DOWN_ARROW)&& !bateuNoMapa(x,y+5))
-    y+=5;
-
-
-    fill(0, 0, 500);
+ fill(0, 0, 500);
   
   fill(0, 0, 500);
   
