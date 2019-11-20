@@ -28,8 +28,13 @@ var xi = 400;
 var yi = 400;
 var opcoes = [0,1];
 var xv1=10, xv2=600,xv3=900;
-
 var tileSize=50;
+
+var i = 260;
+var j = 420;
+var teladeestado=0
+var cont=0
+var start=1
 
 function preload() {
   mapa1 = loadImage('img/mapa/mapa1.jpg');
@@ -45,9 +50,82 @@ function setup() {
 }
 
 function draw() {
-    background(200);
-    if(pontuacao==1){
+  if(teladeestado == 0){
+      menu();
+  }
+  if(teladeestado == 1){
+    iniciar();
+  }
+  if(teladeestado == 2){
+    sair();
+  }
+}
+
+function menu(){
+   background('#C0C0C0');
+   
+  fill('white');
+  stroke('black');
+  strokeWeight(1);
+  //esquerda/direita,cima/baixo,tamanho,altura,bordas
+  rect(260, 420, 400, 35, 10);
+  rect(260, 470, 400, 35, 10);
+
+  
+  textSize(15);
+  fill('black');
+  
+  text('Iniciar', 440, 443);
+  text('Sair', 447,493);
+  
+  noFill();
+  stroke(500, 100, 0);
+  strokeWeight(3);
+  rect(i, j, 400, 36);
+}
+
+function keyPressed() {
+  console.log(keyCode)  
+  if (keyCode === DOWN_ARROW) {
+    if(j<470)
+       j+=25;
+      cont=1
+    } else if (keyCode === UP_ARROW) {
+    if(j>420) 
+       j-=25;
+      cont=0
+  }
+  if (keyCode === DOWN_ARROW) {
+    if(j<470)
+       j+=25;
+    cont=1
+  } else if (keyCode === UP_ARROW) {
+    if(j>420) 
+       j-=25;
+    cont=0
+  }
+  if(keyCode === ENTER ){
+    if(cont==0){
+      teladeestado=1
+  }
+    if(cont==1){
+    teladeestado=2
+    }
+      }
+}
+
+function iniciar(){
+background(200);
+if(start==1){
       fase1();
+}
+}
+
+function fase1(){
+
+background(200);
+    if(pontuacao==1){
+      fase();
     }
 
   
@@ -94,13 +172,7 @@ function draw() {
   
   fill(0, 0, 500);
   
-  
-
- 
-}
-
-
-  function bateuNoMapa(a, b) {
+    function bateuNoMapa(a, b) {
         let bateu=false; 
         for (var i = 0; i < map.length; i++) {
             for (var j = 0; j < map[i].length; j++) {
@@ -125,7 +197,7 @@ function draw() {
                 return true;
             }
 
-  function fase1() {
+  function fase() {
     image(mapa1, 0, 0, 900, 650);
     image(prot, x, y, 48,85);
     moverVilao();
@@ -165,4 +237,9 @@ function moverVilao(){
   image(v1, xv1, 465, 48,85);
   image(v1, xv2, 465, 48,85);
   image(v1, xv3, 465, 48,85);
+}
+}
+function sair(){
+  alert("Adeus ;-;")
+  close()
 }
