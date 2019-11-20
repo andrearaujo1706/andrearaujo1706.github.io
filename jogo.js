@@ -241,6 +241,5 @@ function moverVilao(){
 }
 }
 function sair(){
-  alert("Adeus ;-;")
   close()
 }
