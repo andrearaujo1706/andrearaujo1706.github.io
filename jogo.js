@@ -22,7 +22,7 @@ var pontuacao =1;
 var ve1 = 1;
 var ve2 = 0;
 var ve3 = 1;
-let mapa1,mapa2,mapa3;
+let mapa,mapa1,mapa2,mapa3;
 let prot,v1,v2,v3;
 var xi = 400;
 var yi = 400;
@@ -37,6 +37,7 @@ var cont=0
 var start=1
 
 function preload() {
+  mapa = loadImage('img/mapa/mapa.jpg')
   mapa1 = loadImage('img/mapa/mapa1.jpg');
   mapa2 = loadImage('img/mapa/mapa2.jpg');
   mapa3 = loadImage('img/mapa/mapa3.jpg');
@@ -62,7 +63,7 @@ function draw() {
 }
 
 function menu(){
-   background('#C0C0C0');
+  image(mapa, 0, 0, 900, 650);
    
   fill('white');
   stroke('black');
