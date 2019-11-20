@@ -14,7 +14,7 @@ let map = [
   [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],
   [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],
 ];
-    
+var telaDeEstado=0;  
 var x = 20;
 var y = 465;
 var y_teste=0;
@@ -28,6 +28,8 @@ var xi = 400;
 var yi = 400;
 var opcoes = [0,1];
 var xv1=10, xv2=600,xv3=900;
+var x_menu;
+var y_menu;
 
 var tileSize=50;
 
@@ -45,7 +47,70 @@ function setup() {
 }
 
 function draw() {
-    background(200);
+  if(telaDeEstado == 0){
+      menu();
+  }
+  if(telaDeEstado == 1){
+    iniciar();
+  }
+  if(telaDeEstado == 2){
+    historia();
+  }
+  if(telaDeEstado == 3){
+    sair();
+  }
+
+    
+}
+
+function menu(){
+
+  createCanvas(900, 650);
+  //R, G, B
+  background('#C0C0C0');
+   
+  fill('white');
+  stroke('black');
+  strokeWeight(1);
+  //esquerda/direita,cima/baixo,tamanho,altura,bordas
+  rect(260, 370, 400, 35, 10);
+  rect(260, 420, 400, 35, 10);
+  rect(260, 470, 400, 35, 10);
+  
+  textSize(15);
+  fill('black');
+  
+  text('Iniciar', 440, 392);
+  text('História do jogo', 410,442);
+  text('Sair', 450, 492);
+  
+  noFill();
+  stroke(500, 0, 0);
+  strokeWeight(3);
+  rect(x, y, 400, 36);
+
+
+
+function keyPressed() {
+ 
+ console.log(keyCode);
+   if (keyCode === ENTER){ 
+    telaDeEstado=telaDeEstado++;
+ }      
+       if (keyCode === DOWN_ARROW) {
+    if(y<470)
+       y+=50;
+  } else if (keyCode === UP_ARROW) {
+    if(y>370) 
+       y-=50;
+  }
+ 
+}
+
+}
+
+function iniciar(){
+  background(200);
     if(pontuacao==1){
       fase1();
     }
@@ -165,4 +230,13 @@ function moverVilao(){
   image(v1, xv1, 465, 48,85);
   image(v1, xv2, 465, 48,85);
   image(v1, xv3, 465, 48,85);
+
+}
+
+function sair(){
+
+}
+
+function historia(){
+
 }
