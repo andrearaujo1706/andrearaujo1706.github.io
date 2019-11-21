@@ -241,5 +241,5 @@ function moverVilao(){
 }
 }
 function sair(){
-  close()
+  window.close()
 }
