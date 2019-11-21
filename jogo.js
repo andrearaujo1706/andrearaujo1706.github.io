@@ -218,7 +218,9 @@ background(200);
 if(x==xv1+20 && y<=465||x==xv2+20 && y<=465||x==xv3+20 && y<=465 ){
   vida=vida-1
 }
-
+if(x==xv1-20 && y<=465||x==xv2-20 && y<=465||x==xv3-20 && y<=465 ){
+  vida=vida-1
+}
 
 function vidas(){
     if(vida==3){
