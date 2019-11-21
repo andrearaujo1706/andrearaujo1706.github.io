@@ -42,6 +42,8 @@ function preload() {
   item1= loadImage('img/mapa/vida.png')
   mapa = loadImage('img/mapa/mapa.jpg')
   mapa1 = loadImage('img/mapa/mapa1.jpg');
+  mapa2 = loadImage('img/mapa/mapa2.jpg');
+  mapa3 = loadImage('img/mapa/mapa3.jpg');
   prot = loadImage('img/personagens/prot.png');
   v1 = loadImage('img/personagens/vilao1.png');
   v2 = loadImage('img/personagens/vilao1.png');
@@ -213,8 +215,11 @@ background(200);
     moverVilao();
   }
 
-if(x==xv1+48 && y<=465||x==xv2+48 && y<=465||x==xv4+48 && y<=465){
- vida=vida-1
+if(x==xv1+48 && y<=465 || x==xv2+48 && y<=465||x==xv3+48 && y<=465){
+  vida=vida-1
+}
+if(x==xv1-48 && y<=465 || x==xv2-48 && y<=465||x==xv3-48 && y<=465){
+  vida=vida-1
 }
 
 function vidas(){
