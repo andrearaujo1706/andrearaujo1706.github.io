@@ -244,8 +244,7 @@ function vidas(){
 }
 
 if(vida==0){
-  vida=3
-  menu()
+  draw()
 }
 
 function moverVilao(){
