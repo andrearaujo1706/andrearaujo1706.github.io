@@ -209,8 +209,8 @@ background(200);
       fill('black');
       text('Vidas:', 640, 50);
     image(item1, 720, 25, 30, 40);
-    image(item1, 740, 25, 30, 40);
-    image(item1, 780, 25, 30, 40);
+    image(item1, 760, 25, 30, 40);
+    image(item1, 790, 25, 30, 40);
     image(prot, x, y, 48,85);
     moverVilao();
   }
