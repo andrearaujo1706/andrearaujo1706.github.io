@@ -108,10 +108,11 @@ function keyPressed() {
   if(keyCode === ENTER ){
     if(cont==0){
       teladeestado=1
-  }
+  }else{
     if(cont==1){
     teladeestado=2
     }
+  }
       }
 }
 
@@ -241,5 +242,5 @@ function moverVilao(){
 }
 }
 function sair(){
-  window.close()
+  close()
 }
