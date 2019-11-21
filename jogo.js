@@ -243,7 +243,6 @@ function vidas(){
     }
     if(vida==0){
       alert("você morreu!")
-      vida=3
       close()
       }
 }
