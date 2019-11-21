@@ -215,24 +215,24 @@ background(200);
     moverVilao();
   }
 
-if(x==xv1+48 && y<=465){
+if(x==xv1+48 && y<=380){
   vida=vida-1
 }else{
-if(x==xv1 && y<=465){
+if(x==xv1-48 && y<=380){
   vida=vida-1
 }
 }
-if(x==xv2+48 && y<=465){
-  vida=vida-1
-}else{
-if(x==xv2 && y<=465){
-  vida=vida-1
-}
-}
-if(x==xv3+48 && y<=465){
+if(x==xv2+48 && y<=380){
   vida=vida-1
 }else{
-if(x==xv3 && y<=465){
+if(x==xv2-48 && y<=380){
+  vida=vida-1
+}
+}
+if(x==xv3+48 && y<=380){
+  vida=vida-1
+}else{
+if(x==xv3-48 && y<=380){
   vida=vida-1
 }
 }
@@ -241,7 +241,24 @@ if(xv1==xv2 || xv2==xv3 || xv3==xv1){
     vida=vida-1
   }
 }
-
+if(x==xv1 && y<=380){
+  vida=vida-1
+}else{
+if(x==xv1&& y<=380){
+  vida=vida-1
+}
+if(x==xv1 && y<=380){
+  vida=vida-1
+}else{
+if(x==xv1 && y<=380){
+  vida=vida-1
+}
+if(x==xv1 && y<=380){
+  vida=vida-1
+}else{
+if(x==xv1 && y<=380){
+  vida=vida-1
+}
 
 
 
