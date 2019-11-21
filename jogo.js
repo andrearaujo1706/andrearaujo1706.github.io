@@ -241,10 +241,11 @@ function vidas(){
     if(vida==1){
       image(item1, 720, 25, 30, 40);
     }
-    if(vida==0){
-      alert("você morreu!")
-      teladeestado==2
-      }
+}
+
+if(vida==0){
+  vida=3
+  menu()
 }
 
 function moverVilao(){
