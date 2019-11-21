@@ -243,6 +243,7 @@ function vidas(){
     }
     if(vida==0){
       alert("Score Final: "+"--------"+"\n"+"Você Perdeu!")
+      vida=3
     }
 }
 
