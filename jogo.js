@@ -22,7 +22,7 @@ var pontuacao =1;
 var ve1 = 1;
 var ve2 = 0;
 var ve3 = 1;
-let mapa,mapa1,mapa2,mapa3;
+let mapa,mapa1,mapa2,mapa3,item1;
 let prot,v1,v2,v3;
 var xi = 400;
 var yi = 400;
@@ -37,6 +37,7 @@ var cont=0
 var start=1
 
 function preload() {
+  item1= loadImage('img/mapa/vida.png')
   mapa = loadImage('img/mapa/mapa.jpg')
   mapa1 = loadImage('img/mapa/mapa1.jpg');
   mapa2 = loadImage('img/mapa/mapa2.jpg');
@@ -207,6 +208,7 @@ background(200);
       textSize(25);
       fill('black');
       text('Vidas:', 620, 50);
+    image(item1, 640, 50, 40, 40);
     image(prot, x, y, 48,85);
     moverVilao();
   }
