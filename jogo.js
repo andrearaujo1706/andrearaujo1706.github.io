@@ -215,24 +215,24 @@ background(200);
     moverVilao();
   }
 
-if(x==xv1+48 && y<455){
+if(x==xv1+48 && y<=455){
   vida=vida-1
 }else{
-if(x==xv1-48 && y<455){
+if(x==xv1-48 && y<=455){
   vida=vida-1
 }
 }
-if(x==xv2+48 && y<455){
+if(x==xv2+48 && y<=455){
   vida=vida-1
 }else{
-if(x==xv2-48 && y<455){
+if(x==xv2-48 && y<=455){
   vida=vida-1
 }
 }
 if(x==xv3+48 && y<=455){
   vida=vida-1
 }else{
-if(x==xv3-48 && y<455){
+if(x==xv3-48 && y<=455){
   vida=vida-1
 }
 }
