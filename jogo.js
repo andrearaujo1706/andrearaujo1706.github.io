@@ -215,7 +215,7 @@ background(200);
     moverVilao();
   }
 
-if(x<xv1+48 && x>xv1 || x<xv2+48 && x>xv2 ||x<xv3+48 && x>xv3){
+if(x>xv1+48 && x<xv1-48 ||x>xv2+48 && x<xv2-48 ||x>xv3+48 && x<xv3-48 ){
   vida=vida-1
 }
 
