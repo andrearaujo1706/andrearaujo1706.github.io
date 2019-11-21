@@ -208,7 +208,7 @@ background(200);
       textSize(25);
       fill('black');
       text('Vidas:', 620, 50);
-    image(item1, 640, 50, 40, 40);
+    image(item1, 660, 35, 30, 40);
     image(prot, x, y, 48,85);
     moverVilao();
   }
