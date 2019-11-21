@@ -215,31 +215,14 @@ background(200);
     moverVilao();
   }
 
-if(x==xv1+24&& y<=380){
-  vida=vida-1
-}else{
-if(x==xv1-24 && y<=380){
+if(x==xv1 && y<=465){
   vida=vida-1
 }
-}
-if(x==xv2+24 && y<=380){
-  vida=vida-1
-}else{
-if(x==xv2-24 && y<=380){
+if(x==xv2 && y<=465){
   vida=vida-1
 }
-}
-if(x==xv3+24 && y<=380){
+if(x==xv3 && y<=465){
   vida=vida-1
-}else{
-if(x==xv3-24 && y<=380){
-  vida=vida-1
-}
-}
-if(xv1==xv2 || xv2==xv3 || xv3==xv1){
-  if(x==xv1 || x==xv2|| x==xv3){
-    vida=vida-1
-  }
 }
 
 
