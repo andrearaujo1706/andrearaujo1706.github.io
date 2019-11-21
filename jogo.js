@@ -202,26 +202,6 @@ background(200);
                     return false;
                 return true;
             }
-function colisao1(x,xv1,xv2,xv3){
-    if(x> xv1+48 && y<=465){
-      vida=-1
-    }
-    if(x> xv2+48 && y<=465){
-      vida=-1
-    }
-    if(x> xv3+48 && y<=465){
-      vida=-1
-    }
-    if(x< xv1+48 && y<=465){
-      vida=-1
-    }
-    if(x< xv2+48 && y<=465){
-      vida=-1
-    }
-    if(x< xv3+48 && y<=465){
-      vida=-1
-    }
-}
 
   function fase() {
     image(mapa1, 0, 0, 900, 650);
@@ -233,6 +213,9 @@ function colisao1(x,xv1,xv2,xv3){
     moverVilao();
   }
 
+if(x==xv1+48 && y<=465||x==xv2+48 && y<=465||x==xv4+48 && y<=465){
+ vida=vida-1
+}
 
 function vidas(){
     if(vida==3){
