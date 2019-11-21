@@ -58,6 +58,7 @@ if(teladeestado == 0){
     iniciar();
   }
   if(teladeestado == 2){
+    teladeestado=0
     close();
   }
 }
