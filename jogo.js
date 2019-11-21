@@ -36,7 +36,7 @@ var teladeestado=0
 var cont=0
 var start=1
 
-var vida=3
+var vida =3
 var morte=0
 function preload() {
   item1= loadImage('img/mapa/vida.png')
@@ -241,11 +241,11 @@ function vidas(){
     if(vida==1){
       image(item1, 720, 25, 30, 40);
     }
+    if(vida==0){
+      alert("Score Final: "+"--------"+"\n"+"Você Perdeu!")
+    }
 }
 
-if(vida==0){
-  draw()
-}
 
 function moverVilao(){
   
