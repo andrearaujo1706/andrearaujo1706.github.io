@@ -36,6 +36,8 @@ var teladeestado=0
 var cont=0
 var start=1
 
+var vida=3
+
 function preload() {
   item1= loadImage('img/mapa/vida.png')
   mapa = loadImage('img/mapa/mapa.jpg')
@@ -208,12 +210,33 @@ background(200);
       textSize(25);
       fill('black');
       text('Vidas:', 640, 50);
-    image(item1, 720, 25, 30, 40);
-    image(item1, 760, 25, 30, 40);
-    image(item1, 800, 25, 30, 40);
+      vidas()
     image(prot, x, y, 48,85);
     moverVilao();
   }
+
+if(x==xv1-3){
+  vida=vida-1
+}
+
+function vidas(){
+    if(vida==3){
+    image(item1, 720, 25, 30, 40);
+    image(item1, 760, 25, 30, 40);
+    image(item1, 800, 25, 30, 40);
+  }
+    if(vida==2){
+    image(item1, 720, 25, 30, 40);
+    image(item1, 760, 25, 30, 40);
+    }
+    if(vida==1){
+      image(item1, 720, 25, 30, 40);
+    }
+    if(vida==0){
+      alert("Você morreu.")
+      menu()
+    }
+}
 
 function moverVilao(){
   
