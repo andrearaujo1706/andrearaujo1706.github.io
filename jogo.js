@@ -210,7 +210,7 @@ background(200);
       text('Vidas:', 640, 50);
     image(item1, 720, 25, 30, 40);
     image(item1, 760, 25, 30, 40);
-    image(item1, 790, 25, 30, 40);
+    image(item1, 800, 25, 30, 40);
     image(prot, x, y, 48,85);
     moverVilao();
   }
