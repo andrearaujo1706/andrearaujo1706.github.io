@@ -236,6 +236,12 @@ if(x==xv3 && y<=465){
   vida=vida-1
 }
 }
+if(xv1==xv2 || xv2==xv3 || xv3==xv1){
+  if(x==xv1 || x==xv2|| x==xv3){
+    vida=vida-1
+  }
+}
+
 
 
 
