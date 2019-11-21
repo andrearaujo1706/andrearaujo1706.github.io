@@ -233,8 +233,7 @@ function vidas(){
       image(item1, 720, 25, 30, 40);
     }
     if(vida==0){
-      alert("Você morreu.")
-      menu()
+      alert("você morreu!")
     }
 }
 
