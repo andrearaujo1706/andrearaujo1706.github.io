@@ -243,7 +243,9 @@ function vidas(){
     }
     if(vida==0){
       alert("você morreu!")
+      menu()
       vida=3
+
       
     }
 }
