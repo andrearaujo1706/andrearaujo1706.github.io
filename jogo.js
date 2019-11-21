@@ -218,21 +218,21 @@ background(200);
 if(x==xv1+48 && y<=465){
   vida=vida-1
 }else{
-if(x==xv1-48 && y<=465){
+if(x==xv1 && y<=465){
   vida=vida-1
 }
 }
 if(x==xv2+48 && y<=465){
   vida=vida-1
 }else{
-if(x==xv2-48 && y<=465){
+if(x==xv2 && y<=465){
   vida=vida-1
 }
 }
 if(x==xv3+48 && y<=465){
   vida=vida-1
 }else{
-if(x==xv3-48 && y<=465){
+if(x==xv3 && y<=465){
   vida=vida-1
 }
 }
