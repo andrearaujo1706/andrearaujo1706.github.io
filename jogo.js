@@ -58,7 +58,7 @@ if(teladeestado == 0){
     iniciar();
   }
   if(teladeestado == 2){
-    sair();
+    close();
   }
 }
 
@@ -92,9 +92,6 @@ function keyPressed() {
       }
 }
 
-function sair(){
-  close()
-}
 
 function menu(){
   image(mapa, 0, 0, 900, 650);
