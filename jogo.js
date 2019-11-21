@@ -215,7 +215,7 @@ background(200);
     moverVilao();
   }
 
-if(x==xv1 || x==xv2 || x==xv3){
+if(x==xv1 && y<465 || x==xv2 && y<465  || x==xv3 && y<465){
   vida=vida-1
 }
 
