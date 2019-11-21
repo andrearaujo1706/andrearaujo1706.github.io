@@ -51,7 +51,7 @@ function setup() {
 }
 
 function draw() {
-  if(teladeestado == 0){
+if(teladeestado == 0){
       menu();
   }
   if(teladeestado == 1){
@@ -60,29 +60,6 @@ function draw() {
   if(teladeestado == 2){
     sair();
   }
-}
-
-function menu(){
-  image(mapa, 0, 0, 900, 650);
-   
-  fill('white');
-  stroke('black');
-  strokeWeight(1);
-  //esquerda/direita,cima/baixo,tamanho,altura,bordas
-  rect(260, 420, 400, 35, 10);
-  rect(260, 470, 400, 35, 10);
-
-  
-  textSize(15);
-  fill('black');
-  
-  text('Iniciar', 440, 443);
-  text('Sair', 447,493);
-  
-  noFill();
-  stroke(500, 100, 0);
-  strokeWeight(3);
-  rect(i, j, 400, 36);
 }
 
 function keyPressed() {
@@ -108,13 +85,41 @@ function keyPressed() {
   if(keyCode === ENTER ){
     if(cont==0){
       teladeestado=1
-  }else{
+  }
     if(cont==1){
     teladeestado=2
     }
-  }
       }
 }
+
+function sair(){
+  close()
+}
+
+function menu(){
+  image(mapa, 0, 0, 900, 650);
+   
+  fill('white');
+  stroke('black');
+  strokeWeight(1);
+  //esquerda/direita,cima/baixo,tamanho,altura,bordas
+  rect(260, 420, 400, 35, 10);
+  rect(260, 470, 400, 35, 10);
+
+  
+  textSize(15);
+  fill('black');
+  
+  text('Iniciar', 440, 443);
+  text('Sair', 447,493);
+  
+  noFill();
+  stroke(500, 100, 0);
+  strokeWeight(3);
+  rect(i, j, 400, 36);
+}
+
+
 
 function iniciar(){
 background(200);
@@ -240,7 +245,4 @@ function moverVilao(){
   image(v1, xv2, 465, 48,85);
   image(v1, xv3, 465, 48,85);
 }
-}
-function sair(){
-  close()
 }
