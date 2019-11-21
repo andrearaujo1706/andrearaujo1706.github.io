@@ -243,7 +243,7 @@ function vidas(){
     }
     if(vida==0){
       alert("você morreu!")
-      close()
+      teladeestado==2
       }
 }
 
