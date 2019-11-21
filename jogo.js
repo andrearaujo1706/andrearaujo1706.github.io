@@ -37,7 +37,7 @@ var cont=0
 var start=1
 
 var vida=3
-
+var morte=0
 function preload() {
   item1= loadImage('img/mapa/vida.png')
   mapa = loadImage('img/mapa/mapa.jpg')
@@ -46,8 +46,8 @@ function preload() {
   mapa3 = loadImage('img/mapa/mapa3.jpg');
   prot = loadImage('img/personagens/prot.png');
   v1 = loadImage('img/personagens/vilao1.png');
-  v2 = loadImage('img/personagens/vilao2.png');
-  v3 = loadImage('img/personagens/vilao3.png');
+  v2 = loadImage('img/personagens/vilao1.png');
+  v3 = loadImage('img/personagens/vilao1.png');
 }
 function setup() {
   createCanvas(900, 650);
@@ -215,7 +215,10 @@ background(200);
     moverVilao();
   }
 
-if(x==xv1 && y<=465 || x==xv2 && y<=465||x==xv3 && y<=465){
+if(x==xv1+3 && y<=465 || x==xv2+3 && y<=465||x==xv3+3 && y<=465){
+  vida=vida-1
+}
+if(x==xv1-3 && y<=465 || x==xv2-3 && y<=465||x==xv3-3 && y<=465){
   vida=vida-1
 }
 
@@ -271,7 +274,7 @@ function moverVilao(){
     }
   }
   image(v1, xv1, 465, 48,85);
-  image(v1, xv2, 465, 48,85);
-  image(v1, xv3, 465, 48,85);
+  image(v2, xv2, 465, 48,85);
+  image(v3, xv3, 465, 48,85);
 }
 }
