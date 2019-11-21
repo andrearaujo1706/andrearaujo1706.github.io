@@ -215,12 +215,29 @@ background(200);
     moverVilao();
   }
 
-if(x==xv1+20 && y<=465||x==xv2+20 && y<=465||x==xv3+20 && y<=465 ){
+if(x==xv1+20 && y<=465){
+  vida=vida-1
+}else{
+if(x==xv1-20 && y<=465){
   vida=vida-1
 }
-if(x==xv1-20 && y<=465||x==xv2-20 && y<=465||x==xv3-20 && y<=465 ){
+}
+if(x==xv2+20 && y<=465){
+  vida=vida-1
+}else{
+if(x==xv2-20 && y<=465){
   vida=vida-1
 }
+}
+if(x==xv3+20 && y<=465){
+  vida=vida-1
+}else{
+if(x==xv3-20 && y<=465){
+  vida=vida-1
+}
+}
+
+
 
 function vidas(){
     if(vida==3){
