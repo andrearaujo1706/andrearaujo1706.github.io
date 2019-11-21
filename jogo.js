@@ -204,6 +204,9 @@ background(200);
 
   function fase() {
     image(mapa1, 0, 0, 900, 650);
+      textSize(25);
+      fill('black');
+      text('Vidas:', 620, 50);
     image(prot, x, y, 48,85);
     moverVilao();
   }
