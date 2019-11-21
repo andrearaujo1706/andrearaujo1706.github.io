@@ -244,12 +244,8 @@ function vidas(){
     if(vida==0){
       alert("você morreu!")
       vida=3
-      start=2
+      close()
       }
-}
-if(start=2){
-  draw()
-  start=1
 }
 
 function moverVilao(){
