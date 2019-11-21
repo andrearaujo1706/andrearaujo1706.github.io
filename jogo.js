@@ -215,7 +215,7 @@ background(200);
     moverVilao();
   }
 
-if(x==xv1 && y<465 || x==xv2 && y<465  || x==xv3 && y<465){
+if(x==xv1 && y<=465 || x==xv2 && y<=465||x==xv3 && y<=465){
   vida=vida-1
 }
 
@@ -235,7 +235,7 @@ function vidas(){
     if(vida==0){
       alert("você morreu!")
       vida=3
-      menu()
+      
     }
 }
 
