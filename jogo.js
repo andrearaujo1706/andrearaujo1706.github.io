@@ -207,10 +207,10 @@ background(200);
     image(mapa1, 0, 0, 900, 650);
       textSize(25);
       fill('black');
-      text('Vidas:', 620, 50);
-    image(item1, 700, 25, 30, 40);
-    image(item1, 740, 25, 30, 40);
-    image(item1, 780, 25, 30, 40);
+      text('Vidas:', 640, 50);
+    image(item1, 720, 25, 30, 40);
+    image(item1, 800, 25, 30, 40);
+    image(item1, 880, 25, 30, 40);
     image(prot, x, y, 48,85);
     moverVilao();
   }
