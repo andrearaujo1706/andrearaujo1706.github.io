@@ -35,6 +35,7 @@ var j = 420;
 var ii = 260;
 var jj = 175;
 var teladeestado=0
+var teladeestado1=0
 var cont=0
 var start=1
 
@@ -62,12 +63,21 @@ if(teladeestado == 0){
   }
   if(teladeestado == 1){
     fases();
+    teladeestado1=1
   }
   if(teladeestado == 2){
     teladeestado=0
     close();
   }
 
+}
+
+function fases(){
+function draw(){
+  if(teladeestado1 == 1){
+      menu1();
+  }
+ }
 }
 
 function keyPressed() {
@@ -120,7 +130,7 @@ function keyPressed() {
 
 
 
-function fases(){
+function menu1(){
   image(mapa0, 0, 0, 900, 650);
   fill('white');
   stroke('black');
