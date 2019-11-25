@@ -69,16 +69,12 @@ if(teladeestado == 0){
     teladeestado=0
     close();
   }
-
-}
-
-function fases(){
-function draw(){
-  if(teladeestado1 == 1){
-      menu1();
+  if(teladeestado1==1){
+    menu1();
   }
- }
 }
+
+
 
 function keyPressed() {
   console.log(keyCode)  
