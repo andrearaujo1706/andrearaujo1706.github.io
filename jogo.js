@@ -35,8 +35,9 @@ var j = 420;
 var ii = 260;
 var jj = 175;
 var teladeestado=0
-var teladeestado1=0
+var teladeestado1=1
 var cont=0
+var lop=0
 var start=1
 
 var vida =3
@@ -63,6 +64,7 @@ if(teladeestado == 0){
   }
   if(teladeestado == 1){
     menu1();
+    teladeestado1=0
   }
   if(teladeestado == 2){
     teladeestado=0
@@ -123,7 +125,15 @@ function keyPressed() {
 
 
 function menu1(){
-  image(mapa0, 0, 0, 900, 650);
+  while(lop==0){
+  if(teladeestado1 == 0){
+    menu2();
+  }
+}
+}
+
+function menu2(){
+image(mapa0, 0, 0, 900, 650);
   fill('white');
   stroke('black');
   strokeWeight(1);
@@ -142,6 +152,7 @@ function menu1(){
   stroke(700, 100, 0);
   strokeWeight(3);
   rect(ii, jj, 400, 60);
+
 }
 
 function menu(){
@@ -167,4 +178,8 @@ function menu(){
   rect(i, j, 400, 36);
 }
 
+function teste(){
+  background(220);
+   text('fase 1', 440, 443);
+}
 
