@@ -35,9 +35,7 @@ var j = 420;
 var ii = 260;
 var jj = 175;
 var teladeestado=0
-var teladeestado1=0
 var cont=0
-var cont1=0
 var start=1
 
 var vida =3
@@ -64,27 +62,13 @@ if(teladeestado == 0){
   }
   if(teladeestado == 1){
     fases();
-}
+  }
   if(teladeestado == 2){
     teladeestado=0
     close();
   }
-}
-
-function fases(){
-  function draw(){
-    
-    if(teladeestado1 == 0){
-      menu1();
-     }
-  if(teladeestado1 == 1){
-    fases1();
-    }
 
 }
-}
-
-
 
 function keyPressed() {
   console.log(keyCode)  
@@ -101,13 +85,11 @@ function keyPressed() {
     if(j<470)
        j+=25;
     cont=1
-  } else {
-    if (keyCode === UP_ARROW) {
-    if(j>420)
+  } else if (keyCode === UP_ARROW) {
+    if(j>420) 
        j-=25;
     cont=0
   }
-}
   if(keyCode === ENTER ){
     if(cont==0){
       teladeestado=1
@@ -115,35 +97,30 @@ function keyPressed() {
     if(cont==1){
     teladeestado=2
     }
-    if(cont1==0){
-      teladeestado1=1
       }
-    }
         if (keyCode === DOWN_ARROW) {
-    }
     if(jj<375)
        jj+=50;
-      cont1=cont1+1
+    
     } else if (keyCode === UP_ARROW) {
     if(jj>175) 
        jj-=50;
-      cont1=cont1-1
+      
   }
   if (keyCode === DOWN_ARROW) {
     if(jj<375)
        jj+=50;
-    cont1=cont1+1
+    
   } else if (keyCode === UP_ARROW) {
     if(jj>175) 
        jj-=50;
-    cont1=cont1-1
+    
   }
+}
 
 
 
-
-
-function menu1(){
+function fases(){
   image(mapa0, 0, 0, 900, 650);
   fill('white');
   stroke('black');
@@ -188,16 +165,4 @@ function menu(){
   rect(i, j, 400, 36);
 }
 
-function fase1(){
-background(220);
-text('fase1', 440, 443);
-}
 
-function fase2(){
-background(220);
-text('fase2', 440, 443);
-}
-function fase3(){
-background(220);
-text('fase3', 440, 443);
-}
