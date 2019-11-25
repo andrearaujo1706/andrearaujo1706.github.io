@@ -41,7 +41,7 @@ var start=1
 var vida =3
 var morte=0
 function preload() {
-  img=loadImage('img/mapa/images.png')
+  img=loadImage('img/mapa/images.jpg')
   item1= loadImage('img/mapa/vida.png')
   mapa = loadImage('img/mapa/mapa.jpg')
   mapa1 = loadImage('img/mapa/mapa1.jpg');
