@@ -145,10 +145,3 @@ function menu(){
 
 
 
-function iniciar(){
-background(200);
-if(start==1){
-      fase1();
-}
-}
-
