@@ -32,6 +32,8 @@ var tileSize=50;
 
 var i = 260;
 var j = 420;
+var ii = 260;
+var jj = 175;
 var teladeestado=0
 var cont=0
 var start=1
@@ -39,6 +41,7 @@ var start=1
 var vida =3
 var morte=0
 function preload() {
+  img=loadImage('img/mapa/images.png')
   item1= loadImage('img/mapa/vida.png')
   mapa = loadImage('img/mapa/mapa.jpg')
   mapa1 = loadImage('img/mapa/mapa1.jpg');
@@ -95,29 +98,50 @@ function keyPressed() {
     teladeestado=2
     }
       }
+        if (keyCode === DOWN_ARROW) {
+    if(jj<375)
+       jj+=50;
+    
+    } else if (keyCode === UP_ARROW) {
+    if(jj>175) 
+       jj-=50;
+      
+  }
+  if (keyCode === DOWN_ARROW) {
+    if(jj<375)
+       jj+=50;
+    
+  } else if (keyCode === UP_ARROW) {
+    if(jj>175) 
+       jj-=50;
+    
+  }
 }
 
+
+
 function fases(){
-image(mapa, 0, 0, 900, 650);
+image(img, 0, 0, 900, 650);
    
+   background(220);
   fill('white');
   stroke('black');
   strokeWeight(1);
   //esquerda/direita,cima/baixo,tamanho,altura,bordas
-  rect(260, 420, 400, 35, 10);
-  rect(260, 470, 400, 35, 10);
-
+  rect(260, 175, 400, 60, 10);
+  rect(260, 275, 400, 60, 10);
+  rect(260, 375, 400, 60, 10);
   
-  textSize(15);
+  textSize(20);
   fill('black');
   
-  text('Revolução Industrial', 440, 443);
-  text('Revolução Francesa', 447,493);
-  
+  text('Revolução Industrial', 375, 215);
+  text('Revolução Francesa', 375,315);
+  text('Roma Antiga', 410,415);
   noFill();
-  stroke(500, 100, 0);
+  stroke(700, 100, 0);
   strokeWeight(3);
-  rect(i, j, 400, 36);
+  rect(ii, jj, 400, 60);
 }
 
 function menu(){
@@ -142,6 +166,5 @@ function menu(){
   strokeWeight(3);
   rect(i, j, 400, 36);
 }
-
 
 
