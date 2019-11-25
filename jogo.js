@@ -64,6 +64,7 @@ if(teladeestado == 0){
     teladeestado=0
     close();
   }
+
 }
 
 function keyPressed() {
@@ -71,20 +72,20 @@ function keyPressed() {
   if (keyCode === DOWN_ARROW) {
     if(j<470)
        j+=25;
-      cont=1
+      cont++
     } else if (keyCode === UP_ARROW) {
     if(j>420) 
        j-=25;
-      cont=0
+      cont--
   }
   if (keyCode === DOWN_ARROW) {
     if(j<470)
        j+=25;
-    cont=1
+    cont++
   } else if (keyCode === UP_ARROW) {
     if(j>420) 
        j-=25;
-    cont=0
+    cont--
   }
   if(keyCode === ENTER ){
     if(cont==0){
