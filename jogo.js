@@ -64,32 +64,27 @@ if(teladeestado == 0){
   }
   if(teladeestado == 1){
     fases();
-  }
+}
   if(teladeestado == 2){
     teladeestado=0
     close();
   }
-  if(teladeestado1==0){
-    fase1()
-  }
-   if(teladeestado1==1){
-    fase2()
-  }
-   if(teladeestado1==2){
-    fase3()
-  }
-
 }
 
-if(cont1==0){
-  teladeestado1=0
+function fases(){
+  function draw(){
+    
+    if(teladeestado1 == 0){
+      menu1();
+     }
+  if(teladeestado1 == 1){
+    fases1();
+    }
+
 }
-if(cont1==1){
-  teladeestado1=1
 }
-if(cont1==2){
-  teladeestado1=2
-}
+
+
 
 function keyPressed() {
   console.log(keyCode)  
@@ -137,12 +132,20 @@ function keyPressed() {
        jj-=50;
     cont1=cont1-1
   }
+    if(keyCode === ENTER ){
+    if(cont1==0){
+      teladeestado1=1
+  }
+    if(cont1==1){
+    teladeestado1=2
+    }
+      }
 }
 
 
 
 
-function fases(){
+function menu1(){
   image(mapa0, 0, 0, 900, 650);
   fill('white');
   stroke('black');
