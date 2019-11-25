@@ -75,20 +75,20 @@ function keyPressed() {
   if (keyCode === DOWN_ARROW) {
     if(j<470)
        j+=25;
-      cont++
+      cont=1
     } else if (keyCode === UP_ARROW) {
     if(j>420) 
        j-=25;
-      cont--
+      cont=0
   }
   if (keyCode === DOWN_ARROW) {
     if(j<470)
        j+=25;
-    cont++
+    cont=1
   } else if (keyCode === UP_ARROW) {
     if(j>420) 
        j-=25;
-    cont--
+    cont=0
   }
   if(keyCode === ENTER ){
     if(cont==0){
