@@ -63,7 +63,6 @@ if(teladeestado == 0){
   }
   if(teladeestado == 1){
     menu1();
-    teladeestado1=1
   }
   if(teladeestado == 2){
     teladeestado=0
