@@ -17,12 +17,14 @@ let map = [
     
 var x = 20;
 var y = 465;
+var x1=20
+var y2=465
 var y_teste=0;
 var pontuacao =1;
 var ve1 = 1;
 var ve2 = 0;
 var ve3 = 1;
-let mapa,mapa1,mapa2,mapa3,item1;
+let mapa,mapa1,mapa2,mapa3,item1,bala;
 let prot,v1,v2,v3;
 var xi = 400;
 var yi = 400;
@@ -39,6 +41,7 @@ var start=1
 var vida =3
 var morte=0
 function preload() {
+  bala= loadImage('img/mapa/bala.png')
   item1= loadImage('img/mapa/vida.png')
   mapa = loadImage('img/mapa/mapa.jpg')
   mapa1 = loadImage('img/mapa/mapa1.jpg');
@@ -94,8 +97,12 @@ function keyPressed() {
     teladeestado=2
     }
       }
+  if(keyCode===BACKSPACE){
+     for(i=0;i<10;i++){
+      image(bala, x, y,16 , 17);
+  }
+  }
 }
-
 
 function menu(){
   image(mapa, 0, 0, 900, 650);
@@ -224,7 +231,6 @@ if(x==xv2 && y<=465){
 if(x==xv3 && y<=465){
   vida=vida-1
 }
-
 
 
 
