@@ -17,8 +17,8 @@ let map = [
     
 var x = 20;
 var y = 465;
-var x1=20
-var y2=465
+var xb;
+
 var y_teste=0;
 var pontuacao =1;
 var ve1 = 1;
@@ -40,6 +40,7 @@ var start=1
 
 var vida =3
 var morte=0
+
 function preload() {
   bala= loadImage('img/mapa/bala.png')
   item1= loadImage('img/mapa/vida.png')
@@ -98,9 +99,7 @@ function keyPressed() {
     }
       }
   if(keyCode===BACKSPACE){
-     for(i=0;i<10;i++){
-      image(bala, x, y,16 , 17);
-  }
+   bala()
   }
 }
 
@@ -127,7 +126,11 @@ function menu(){
   rect(i, j, 400, 36);
 }
 
-
+function bala(){
+  for(p=0;p<30;p++){
+  image(bala, x+p, y, 16, 17);
+}
+}
 
 function iniciar(){
 background(200);
@@ -218,6 +221,7 @@ background(200);
       fill('black');
       text('Vidas:', 640, 50);
       vidas()
+      bala()
     image(prot, x, y, 48,85);
     moverVilao();
   }
