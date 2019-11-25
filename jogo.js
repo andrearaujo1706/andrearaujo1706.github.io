@@ -101,11 +101,13 @@ function keyPressed() {
     if(j<470)
        j+=25;
     cont=1
-  } else if (keyCode === UP_ARROW) {
-    if(j>420) 
+  } else {
+    if (keyCode === UP_ARROW) {
+    if(j>420)
        j-=25;
     cont=0
   }
+}
   if(keyCode === ENTER ){
     if(cont==0){
       teladeestado=1
