@@ -103,7 +103,7 @@ function keyPressed() {
     teladeestado=2
     }
     if(cont1==0 && teladeestado==1){
-      teladeestado1=3
+      teladeestado=3
       }
         if (keyCode === DOWN_ARROW) {
     }
