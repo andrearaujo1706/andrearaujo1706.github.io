@@ -33,7 +33,7 @@ var tileSize=50;
 var i = 260;
 var j = 420;
 var ii = 260;
-var jj = 125;
+var jj = 175;
 var teladeestado=0
 var teladeestado1=0
 var cont=0
@@ -110,20 +110,20 @@ function keyPressed() {
         if (keyCode === DOWN_ARROW) {
     }
     if(jj<375)
-       jj+=70;
+       jj+=50;
       cont1=cont1+1
     } else if (keyCode === UP_ARROW) {
     if(jj>175) 
-       jj-=70;
+       jj-=50;
       cont1=cont1-1
   }
   if (keyCode === DOWN_ARROW) {
     if(jj<375)
-       jj+=70;
+       jj+=50;
     cont1=cont1+1
   } else if (keyCode === UP_ARROW) {
     if(jj>175) 
-       jj-=70;
+       jj-=50;
     cont1=cont1-1
   }
 }
