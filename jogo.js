@@ -62,15 +62,12 @@ if(teladeestado == 0){
       menu();
   }
   if(teladeestado == 1){
-    fases();
+    menu1();
     teladeestado1=1
   }
   if(teladeestado == 2){
     teladeestado=0
     close();
-  }
-  if(teladeestado1==1){
-    menu1();
   }
 }
 
