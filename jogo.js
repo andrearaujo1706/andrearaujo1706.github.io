@@ -35,9 +35,7 @@ var j = 420;
 var ii = 260;
 var jj = 175;
 var teladeestado=0
-var teladeestado1=1
 var cont=0
-var lop=0
 var start=1
 
 var vida =3
@@ -125,14 +123,6 @@ function keyPressed() {
 
 
 function menu1(){
-  while(lop==0){
-  if(teladeestado1 == 0){
-    menu2();
-  }
-}
-}
-
-function menu2(){
 image(mapa0, 0, 0, 900, 650);
   fill('white');
   stroke('black');
