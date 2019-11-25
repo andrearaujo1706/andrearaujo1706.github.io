@@ -110,20 +110,20 @@ function keyPressed() {
         if (keyCode === DOWN_ARROW) {
     }
     if(jj<375)
-       jj+=50;
+       jj+=70;
       cont1=cont1+1
     } else if (keyCode === UP_ARROW) {
     if(jj>175) 
-       jj-=50;
+       jj-=70;
       cont1=cont1-1
   }
   if (keyCode === DOWN_ARROW) {
     if(jj<375)
-       jj+=50;
+       jj+=70;
     cont1=cont1+1
   } else if (keyCode === UP_ARROW) {
     if(jj>175) 
-       jj-=50;
+       jj-=70;
     cont1=cont1-1
   }
 }
