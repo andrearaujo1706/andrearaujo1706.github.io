@@ -35,7 +35,9 @@ var j = 420;
 var ii = 260;
 var jj = 175;
 var teladeestado=0
+var teladeestado1=0
 var cont=0
+var cont1=0
 var start=1
 
 var vida =3
@@ -67,7 +69,26 @@ if(teladeestado == 0){
     teladeestado=0
     close();
   }
+  if(teladeestado1==0){
+    fase1()
+  }
+   if(teladeestado1==1){
+    fase2()
+  }
+   if(teladeestado1==2){
+    fase3()
+  }
 
+}
+
+if(cont1==0){
+  teladeestado1=0
+}
+if(cont1==1){
+  teladeestado1=1
+}
+if(cont1==2){
+  teladeestado1=2
 }
 
 function keyPressed() {
@@ -101,22 +122,23 @@ function keyPressed() {
         if (keyCode === DOWN_ARROW) {
     if(jj<375)
        jj+=50;
-    
+      cont1=cont1+1
     } else if (keyCode === UP_ARROW) {
     if(jj>175) 
        jj-=50;
-      
+      cont1=cont1-1
   }
   if (keyCode === DOWN_ARROW) {
     if(jj<375)
        jj+=50;
-    
+    cont1=cont1+1
   } else if (keyCode === UP_ARROW) {
     if(jj>175) 
        jj-=50;
-    
+    cont1=cont1-1
   }
 }
+
 
 
 
@@ -165,4 +187,16 @@ function menu(){
   rect(i, j, 400, 36);
 }
 
+function fase1(){
+background(220);
+text('fase1', 440, 443);
+}
 
+function fase2(){
+background(220);
+text('fase2', 440, 443);
+}
+function fase3(){
+background(220);
+text('fase3', 440, 443);
+}
