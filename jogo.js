@@ -32,7 +32,7 @@ var tileSize=50;
 
 var i = 260;
 var j = 420;
-var ii = 260;
+var ii = 261;
 var jj = 175;
 var teladeestado=0
 var cont=0
@@ -60,11 +60,15 @@ function setup() {
 function draw() {
 if(teladeestado == 0){
       menu();
+      ii=261
+      jj=176
   }
   if(teladeestado == 1){
     menu1();
     cont=5
     cont1=0
+    ii=260
+    jj=175
   }
   if(teladeestado == 2){
     teladeestado=0
