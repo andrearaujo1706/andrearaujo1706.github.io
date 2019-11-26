@@ -169,20 +169,20 @@ if(keyCode === ENTER ){
      if (keyCode === DOWN_ARROW) {
     if(m<520)
        m+=50;
-      cont2=1
+      cont2=cont2+1
     } else if (keyCode === UP_ARROW) {
     if(m>470) 
        m-=50;
-      cont2=0
+      cont2=cont2-1
   }
   if (keyCode === DOWN_ARROW) {
     if(m<470)
        m+=50;
-    cont2=1
+    cont2=cont2+1
   } else if (keyCode === UP_ARROW) {
     if(m>550) 
        m-=50;
-     cont2=0
+     cont2=cont2-1
   }
   if(keyCode === ENTER ){
     if(cont2==1){
