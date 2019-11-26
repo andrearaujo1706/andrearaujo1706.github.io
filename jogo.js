@@ -103,13 +103,11 @@ function keyPressed() {
   }
     if(cont==1){
     teladeestado=2
-    }else{
-    if(cont1==0){
-      teladeestado=3
-      }
     }
-        if (keyCode === DOWN_ARROW) {
-    }
+}
+function keyPressed(){
+  console.log(keyCode) 
+    if (keyCode === DOWN_ARROW) {
     if(jj<375)
        jj+=50;
       cont1=cont1+1
@@ -127,8 +125,12 @@ function keyPressed() {
        jj-=50;
     cont1=cont1-1
   }
-}
 
+  if(keyCode === ENTER ){
+    if(cont1==0){
+      teladeestado=3
+  }
+}
 
 function menu1(){
 image(mapa0, 0, 0, 900, 650);
