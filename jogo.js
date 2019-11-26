@@ -145,7 +145,7 @@ if(b==1){
        jj-=50;
      cont1=cont1-1
   }
-  if (keyCode === DOWN_ARROW && cont1<=-1) {
+  if (keyCode === DOWN_ARROW && cont1<=3) {
     if(jj<375)
        jj+=50;
       cont1=cont1+1
