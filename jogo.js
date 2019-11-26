@@ -103,10 +103,11 @@ function keyPressed() {
   }
     if(cont==1){
     teladeestado=2
-    }
-    if(cont1==0 && teladeestado1==1){
+    }else{
+    if(cont1==0){
       teladeestado=3
       }
+    }
         if (keyCode === DOWN_ARROW) {
     }
     if(jj<375)
