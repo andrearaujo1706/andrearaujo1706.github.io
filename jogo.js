@@ -242,6 +242,10 @@ function menu(){
   stroke(500, 100, 0);
   strokeWeight(3);
   rect(i, j, 400, 36);
+
+   textSize(25);
+      fill('black');
+      text(cont, 640, 50);
 }
 
 function fase1(){
