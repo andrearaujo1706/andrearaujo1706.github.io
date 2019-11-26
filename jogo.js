@@ -110,7 +110,7 @@ function keyPressed() {
     if(cont1==0){
       teladeestado=3
     }
-    if(jj==225){
+    if(cont1==1){
       teladeestado==4
     }
 }
@@ -118,16 +118,20 @@ function keyPressed() {
  if (keyCode === DOWN_ARROW) {
     if(jj<375)
        jj+=50;
+     cont1+=1
     } else if (keyCode === UP_ARROW) {
     if(jj>175) 
        jj-=50;
+      cont1-=1
   }
   if (keyCode === DOWN_ARROW) {
     if(jj<375)
        jj+=50;
+      cont1+=1
   } else if (keyCode === UP_ARROW) {
     if(jj>175) 
        jj-=50;
+     cont1-=1
   }
 
 }
