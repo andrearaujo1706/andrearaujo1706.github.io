@@ -75,7 +75,6 @@ if(teladeestado == 0){
       menu();
   }
   if(teladeestado == 1){
-    cont2=8
     cont=5
     vida=3
     b=1
