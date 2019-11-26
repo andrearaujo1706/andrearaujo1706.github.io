@@ -105,6 +105,7 @@ function keyPressed() {
     teladeestado=2
     }
 }
+}
 function keyPressed(){
   console.log(keyCode) 
     if (keyCode === DOWN_ARROW) {
