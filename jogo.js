@@ -140,7 +140,7 @@ if(b==1){
       }
     }
 
-     else if (keyCode === UP_ARROW) {
+     else if (keyCode === UP_ARROW && cont1>=0) {
     if(jj>175) 
        jj-=50;
      cont1=cont1-1
@@ -149,7 +149,7 @@ if(b==1){
     if(jj<375)
        jj+=50;
       cont1=cont1+1
-  } else if (keyCode === UP_ARROW) {
+  } else if (keyCode === UP_ARROW && cont1>=0) {
     if(jj>175) 
        jj-=50;
      cont1=cont1-1
