@@ -71,8 +71,15 @@ if(teladeestado == 0){
     close();
   }
   if(teladeestado==3){
-    teste()
+    fase1()
   }
+   if(teladeestado==4){
+    fase2()
+  }
+ if(teladeestado==5){
+    fase3()
+  }
+
 }
 
 
@@ -106,6 +113,12 @@ function keyPressed() {
     }
     if(cont1==0){
       teladeestado=3
+    }
+    if(cont1==1){
+      teladeestado=4
+    }
+    if(cont1==2){
+      teladeestado=5
     }
 }
     if (keyCode === DOWN_ARROW) {
@@ -174,7 +187,16 @@ function menu(){
   rect(i, j, 400, 36);
 }
 
-function teste(){
+function fase1(){
+  background(220);
+   text('fase 1', 440, 443);
+}
+
+function fase2(){
+  background(220);
+   text('fase 1', 440, 443);
+}
+function fase3(){
   background(220);
    text('fase 1', 440, 443);
 }
