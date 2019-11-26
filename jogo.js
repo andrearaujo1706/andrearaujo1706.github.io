@@ -104,6 +104,9 @@ function keyPressed() {
     if(cont==1){
     teladeestado=2
     }
+    if(cont1==0){
+      teladeestado=3
+    }
 }
     if (keyCode === DOWN_ARROW) {
     if(jj<375)
@@ -123,12 +126,6 @@ function keyPressed() {
        jj-=50;
     cont1=cont1-1
   }
-
-  if(keyCode === ENTER ){
-    if(cont1==0){
-      teladeestado=3
-  }
-}
 }
 
 function menu1(){
