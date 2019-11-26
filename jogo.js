@@ -36,7 +36,7 @@ var ii = 261;
 var jj = 175;
 var teladeestado=0
 var cont=0
-var cont1=1
+var cont1=0
 var start=1
 var b=0
 
@@ -82,9 +82,8 @@ if(teladeestado == 0){
 
 
 function keyPressed() {
-  
-  if(b==0){
   console.log(keyCode)
+  if(b==0){
   if (keyCode === DOWN_ARROW) {
     if(j<470)
        j+=25;
@@ -117,22 +116,28 @@ if(b==1){
   if (keyCode === DOWN_ARROW) {
     if(jj<375)
        jj+=50;
-     
+      cont1=cont1+1
     } else if (keyCode === UP_ARROW) {
     if(jj>175) 
        jj-=50;
-     
+     cont1=cont1-1
   }
   if (keyCode === DOWN_ARROW) {
     if(jj<375)
        jj+=50;
-      
+      cont1=cont1+1
   } else if (keyCode === UP_ARROW) {
     if(jj>175) 
        jj-=50;
+     cont1=cont1-1
   }
-}
 
+if(keyCode === ENTER ){
+    if(cont1==0){
+        teladeestado=3
+    }
+  }
+ }
 }
 
 
