@@ -71,14 +71,11 @@ function setup() {
 function draw() {
 if(teladeestado == 0){
       cont2=8
-      cont1=5
       b=0
       menu();
   }
   if(teladeestado == 1){
-    cont=8
-    cont2=8
-    cont1=0
+    cont=0
     vida=3
     b=1
     menu1();
@@ -139,20 +136,20 @@ if(b==1){
   if (keyCode === DOWN_ARROW) {
     if(jj<375)
        jj+=50;
-      cont1++
+      cont1+=1
     } else if (keyCode === UP_ARROW) {
     if(jj>175) 
        jj-=50;
-     cont1--
+     cont1-=1
   }
   if (keyCode === DOWN_ARROW) {
     if(jj<375)
        jj+=50;
-      cont1++
+      cont1+=1
   } else if (keyCode === UP_ARROW) {
     if(jj>175) 
        jj-=50;
-     cont1--
+     cont1-=1
   }
 
 if(keyCode === ENTER ){
