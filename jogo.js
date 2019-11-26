@@ -36,7 +36,7 @@ var ii = 260;
 var jj = 175;
 var teladeestado=0
 var cont=0
-var cont1=1
+var cont1=5
 var start=1
 
 var vida =3
@@ -103,11 +103,11 @@ function keyPressed() {
   }
     if(cont==1){
     teladeestado=2
-    }else{
+    }
     if(cont1==0){
       teladeestado=3
     }
-  }
+  
 }
 
  if (keyCode === DOWN_ARROW) {
