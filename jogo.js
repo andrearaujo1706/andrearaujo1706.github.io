@@ -37,7 +37,7 @@ var jj = 175;
 var teladeestado=0
 var teladeestado1=0
 var cont=0
-var cont1=6
+var cont1=1
 var start=1
 
 var vida =3
@@ -72,7 +72,9 @@ if(teladeestado == 0){
   }
   if(teladeestado==3){
     fase1()
-    cont1=6
+}
+  if(teladeestado==4){
+    fase2()
 }
 }
 
@@ -108,6 +110,10 @@ function keyPressed() {
     if(cont1==0){
       teladeestado=3
     }
+    if(cont1==1){
+      teladeestado=4
+    }
+
 }
     if (keyCode === DOWN_ARROW) {
     if(jj<375)
