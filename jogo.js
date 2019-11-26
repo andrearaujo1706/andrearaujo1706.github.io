@@ -431,7 +431,7 @@ function fase2(){
             }
 
   function fase() {
-    image(mapa2, 0, 0, 900, 650);
+    image(mapa3, 0, 0, 900, 650);
       textSize(25);
       fill('black');
       text('Vidas:', 640, 50);
