@@ -133,8 +133,8 @@ function keyPressed() {
 }
 
 if(b==1){
-  if (keyCode === DOWN_ARROW) {
-     if(jj<375 && cont1<=6){
+  if (keyCode === DOWN_ARROW && cont1<=4) {
+     if(jj<375){
        jj+=50;
        cont1=cont1+1
       }
@@ -145,8 +145,8 @@ if(b==1){
        jj-=50;
      cont1=1
   }
-  if (keyCode === DOWN_ARROW) {
-    if(jj<375 && cont1<=6)
+  if (keyCode === DOWN_ARROW && cont1<=4) {
+    if(jj<375)
        jj+=50;
       cont1=cont1+1
   } else if (keyCode === UP_ARROW) {
