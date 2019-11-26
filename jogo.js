@@ -92,7 +92,7 @@ if(teladeestado == 0){
   }
   if(teladeestado==6){
     b=2
-    morte1()
+    morreu()
   }
 }
 
@@ -702,7 +702,7 @@ function moverVilao(){
   image(v9, xv3, 465, 80,85);
 }
 }
-function morte1(){
+function morreu(){
   image(morte1, 0, 0, 900, 650);;
  fill('white');
   stroke('black');
