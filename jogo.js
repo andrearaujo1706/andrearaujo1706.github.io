@@ -1,6 +1,6 @@
 let morte;
 var p = 260;
-var m = 420;
+var m = 470;
 function setup() {
   createCanvas(900, 650);
 }
@@ -10,19 +10,19 @@ function preload() {
 }
 function draw() {
   image(morte, 0, 0, 900, 650);;
-  fill('white');
+ fill('white');
   stroke('black');
   strokeWeight(1);
   //esquerda/direita,cima/baixo,tamanho,altura,bordas
-  rect(260, 420, 400, 35, 10);
   rect(260, 470, 400, 35, 10);
+  rect(260, 520, 400, 35, 10);
 
   
   textSize(15);
   fill('black');
   
-  text('Tentar Novamente', 400, 443);
-  text('Menu', 447,493);
+  text('Tentar Novamente', 400, 493);
+  text('Menu', 447,543);
   
   noFill();
   stroke(500, 100, 0);
@@ -32,22 +32,22 @@ function draw() {
 
 function keyPressed(){ 
 console.log(keyCode)
-  if (keyCode === DOWN_ARROW) {
-    if(j<470)
-       j+=25;
-      cont=1
+    if (keyCode === DOWN_ARROW) {
+    if(m<520)
+       m+=50;
+      
     } else if (keyCode === UP_ARROW) {
-    if(j>420) 
-       j-=25;
-      cont=0
+    if(m>470) 
+       m-=50;
+      
   }
   if (keyCode === DOWN_ARROW) {
-    if(j<470)
-       j+=25;
-    cont=1
+    if(m<470)
+       m+=50;
+    
   } else if (keyCode === UP_ARROW) {
-    if(j>420) 
-       j-=25;
-    cont=0
+    if(m>550) 
+       m-=50;
+  
   }
 }
