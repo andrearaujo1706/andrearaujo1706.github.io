@@ -722,4 +722,9 @@ function morreu(){
   stroke(500, 100, 0);
   strokeWeight(3);
   rect(p, m, 400, 36);
+
+
+  textSize(25);
+      fill('black');
+      text(cont2, 640, 50);
 }
