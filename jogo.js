@@ -136,6 +136,9 @@ if(keyCode === ENTER ){
     if(cont1==0){
         teladeestado=3
     }
+    if(cont1==1){
+        teladeestado=4
+    }
   }
  }
 }
