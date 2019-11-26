@@ -65,6 +65,7 @@ if(teladeestado == 0){
   }
   if(teladeestado == 1){
     menu1();
+    setas1()
   }
   if(teladeestado == 2){
     teladeestado=0
@@ -84,20 +85,20 @@ function setas() {
   if (keyCode === DOWN_ARROW) {
     if(j<470)
        j+=25;
-      cont=cont+1
+      cont=1
     } else if (keyCode === UP_ARROW) {
     if(j>420) 
        j-=25;
-      cont=cont-1
+      cont=0
   }
   if (keyCode === DOWN_ARROW) {
     if(j<470)
        j+=25;
-    cont=cont+1
+    cont=1
   } else if (keyCode === UP_ARROW) {
     if(j>420) 
        j-=25;
-    cont=cont-1
+    cont=0
   }
 
   if(keyCode === ENTER ){
