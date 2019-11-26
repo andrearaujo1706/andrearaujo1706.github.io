@@ -70,7 +70,7 @@ if(teladeestado == 0){
     teladeestado=0
     close();
   }
-  if(teladeestado==3){
+  if(teladeestado==3 && cont1==0){
     teste()
   }
 }
