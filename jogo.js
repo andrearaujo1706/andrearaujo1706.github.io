@@ -224,10 +224,6 @@ image(mapa0, 0, 0, 900, 650);
   strokeWeight(3);
   rect(ii, jj, 400, 60);
 
-textSize(25);
-      fill('black');
-      text(cont1, 640, 50);
-
 }
 
 function menu(){
@@ -252,9 +248,6 @@ function menu(){
   strokeWeight(3);
   rect(i, j, 400, 36);
 
-   textSize(25);
-      fill('black');
-      text(cont, 640, 50);
 }
 
 function fase1(){
@@ -743,7 +736,5 @@ function morreu(){
   rect(p, m, 400, 36);
 
 
-  textSize(25);
-      fill('black');
-      text(cont2, 640, 50);
+  
 }
