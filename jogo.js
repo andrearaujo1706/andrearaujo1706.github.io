@@ -81,9 +81,9 @@ if(teladeestado == 0){
 
 
 function keyPressed() {
-  console.log(keyCode)  
   
-if(b==0){
+  if(b==0){
+  console.log(keyCode)
   if (keyCode === DOWN_ARROW) {
     if(j<470)
        j+=25;
