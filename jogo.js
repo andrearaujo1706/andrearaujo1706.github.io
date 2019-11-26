@@ -64,6 +64,7 @@ if(teladeestado == 0){
   }
   if(teladeestado == 1){
     cont=5
+    b=1
     menu1();
 }
   if(teladeestado == 2){
@@ -110,7 +111,28 @@ function keyPressed() {
     teladeestado=2
     }
   }
-        }
+}
+
+if(b==1){
+  if (keyCode === DOWN_ARROW) {
+    if(jj<375)
+       jj+=50;
+     
+    } else if (keyCode === UP_ARROW) {
+    if(jj>175) 
+       jj-=50;
+     
+  }
+  if (keyCode === DOWN_ARROW) {
+    if(jj<375)
+       jj+=50;
+      
+  } else if (keyCode === UP_ARROW) {
+    if(jj>175) 
+       jj-=50;
+  }
+}
+
 }
 
 
