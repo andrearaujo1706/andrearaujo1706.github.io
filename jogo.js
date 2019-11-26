@@ -104,6 +104,9 @@ function keyPressed() {
     if(cont==1){
     teladeestado=2
     }
+    if(cont1==0){
+      teladeestado=3
+    }
 }
 
  if (keyCode === DOWN_ARROW) {
