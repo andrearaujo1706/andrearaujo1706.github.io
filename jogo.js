@@ -182,10 +182,10 @@ if(keyCode === ENTER ){
   }
   if(keyCode === ENTER ){
     if(cont2==1){
-        teladeestado=3
+        teladeestado=0
     }
     if(cont2==0){
-        teladeestado=0
+        teladeestado=3
     }
   }
 }
