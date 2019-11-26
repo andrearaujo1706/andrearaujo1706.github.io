@@ -186,5 +186,5 @@ function teste(){
 }
 function teste1(){
   background(220);
-   text('fase 1', 440, 443);
+   text('fase 2', 440, 443);
 }
