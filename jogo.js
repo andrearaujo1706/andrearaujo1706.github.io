@@ -181,10 +181,10 @@ if(keyCode === ENTER ){
      cont2=1
   }
   if(keyCode === ENTER ){
-    if(cont2==0){
+    if(cont2==1){
         teladeestado=3
     }
-    if(cont2==2){
+    if(cont2==0){
         teladeestado=0
     }
   }
