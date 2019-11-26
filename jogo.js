@@ -35,10 +35,11 @@ var j = 420;
 var ii = 260;
 var jj = 175;
 var teladeestado=0
-var teladeestado1=0
+var teladeestado1=1
 var cont=0
 var cont1=6
 var start=1
+var key=1
 
 var vida =3
 var morte=0
@@ -64,44 +65,42 @@ if(teladeestado == 0){
   }
   if(teladeestado == 1){
     menu1();
-    cont1=0
+    key=2
   }
   if(teladeestado == 2){
     teladeestado=0
     close();
   }
-  if(teladeestado==3){
+  if(teladeestado1==0){
     fase1()
-    cont1==6
 }
-  if(teladeestado==4){
-    fase2()
-    cont1==6
-}
+  
 }
 
 
 
 function keyPressed() {
   console.log(keyCode)  
+if(key==1){
   if (keyCode === DOWN_ARROW) {
     if(j<470)
        j+=25;
-      cont=1
+      cont=cont+1
     } else if (keyCode === UP_ARROW) {
     if(j>420) 
        j-=25;
-      cont=0
+      cont=cont-1
   }
   if (keyCode === DOWN_ARROW) {
     if(j<470)
        j+=25;
-    cont=1
+    cont=cont+1
   } else if (keyCode === UP_ARROW) {
     if(j>420) 
        j-=25;
-    cont=0
+    cont=cont-1
   }
+
   if(keyCode === ENTER ){
     if(cont==0){
       teladeestado=1
@@ -109,15 +108,9 @@ function keyPressed() {
     if(cont==1){
     teladeestado=2
     }
-    if(cont1==0){
-      teladeestado=3
-    }else{
-    if(cont1==1){
-      teladeestado=4
-    }
   }
-
 }
+ if(key==2){
     if (keyCode === DOWN_ARROW) {
     if(jj<375)
        jj+=50;
@@ -136,6 +129,7 @@ function keyPressed() {
        jj-=50;
     cont1--
   }
+}
 }
 
 function menu1(){
