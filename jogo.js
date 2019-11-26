@@ -79,6 +79,9 @@ if(teladeestado == 0){
    if(teladeestado==4){
     teste1()
   }
+  if(teladeestado==5){
+    teste2()
+  }
 }
 
 
@@ -141,6 +144,9 @@ if(keyCode === ENTER ){
     if(cont1==2){
         teladeestado=4
     }
+    if(cont1==4){
+      teladeestado=5
+    }
   }
  }
 }
@@ -201,4 +207,9 @@ function teste(){
 function teste1(){
   background(220);
    text('fase 2', 440, 443);
+}
+
+function teste2(){
+  background(220);
+   text('fase 3', 440, 443);
 }
