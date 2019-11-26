@@ -70,6 +70,8 @@ function setup() {
 
 function draw() {
 if(teladeestado == 0){
+      cont2=8
+      b=0
       menu();
   }
   if(teladeestado == 1){
