@@ -330,6 +330,9 @@ function fase1(){
       textSize(25);
       fill('black');
       text('Vidas:', 640, 50);
+       textSize(25);
+      fill('black');
+      text('Score:', 30, 50);
       vidas()
     image(prot, x, y, 48,85);
     moverVilao();
@@ -485,6 +488,9 @@ function fase2(){
       textSize(25);
       fill('black');
       text('Vidas:', 640, 50);
+       textSize(25);
+      fill('black');
+      text('Score:', 30, 50);
       vidas()
     image(prot, x, y, 48,85);
     moverVilao();
@@ -640,6 +646,9 @@ function fase3(){
       textSize(25);
       fill('black');
       text('Vidas:', 640, 50);
+       textSize(25);
+      fill('black');
+      text('Score:', 30, 50);
       vidas()
     image(prot, x, y, 48,85);
     moverVilao();
