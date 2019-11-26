@@ -67,7 +67,7 @@ if(teladeestado == 0){
     b=1
     menu1();
     fill('black')
-    text('fase 1', 300, 100);
+    text(cont1, 300, 100);
 }
   if(teladeestado == 2){
     teladeestado=0
