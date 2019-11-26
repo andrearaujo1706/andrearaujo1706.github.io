@@ -219,6 +219,10 @@ image(mapa0, 0, 0, 900, 650);
   strokeWeight(3);
   rect(ii, jj, 400, 60);
 
+textSize(25);
+      fill('black');
+      text(cont1, 640, 50);
+
 }
 
 function menu(){
