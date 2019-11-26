@@ -37,7 +37,7 @@ var jj = 175;
 var teladeestado=0
 var teladeestado1=0
 var cont=0
-var cont1=1
+var cont1=6
 var start=1
 
 var vida =3
@@ -72,6 +72,7 @@ if(teladeestado == 0){
   }
   if(teladeestado==3){
     fase1()
+    cont1=6
 }
 }
 
