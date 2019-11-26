@@ -37,7 +37,7 @@ var jj = 175;
 var teladeestado=0
 var teladeestado1=0
 var cont=0
-var cont1=0
+var cont1=1
 var start=1
 
 var vida =3
@@ -64,7 +64,7 @@ if(teladeestado == 0){
   }
   if(teladeestado == 1){
     menu1();
-    teladeestado1=1
+    cont1=0
   }
   if(teladeestado == 2){
     teladeestado=0
