@@ -522,8 +522,8 @@ function vidas(){
       image(item1, 720, 25, 30, 40);
     }
     if(vida==0){
-      alert("Score Final: "+"--------"+"\n"+"Você Perdeu!")
-      vida=3
+      teladeestado=6
+      cont2=0
     }
 }
 
@@ -677,8 +677,8 @@ function vidas(){
       image(item1, 720, 25, 30, 40);
     }
     if(vida==0){
-      alert("Score Final: "+"--------"+"\n"+"Você Perdeu!")
-      vida=3
+      teladeestado=6
+      cont2=0
     }
 }
 
