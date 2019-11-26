@@ -36,7 +36,7 @@ var ii = 261;
 var jj = 175;
 var teladeestado=0
 var cont=0
-var cont1=5
+var cont1=1
 var start=1
 
 var vida =3
@@ -63,8 +63,6 @@ if(teladeestado == 0){
   }
   if(teladeestado == 1){
     menu1();
-    cont=5
-    cont1=0
   }
   if(teladeestado == 2){
     teladeestado=0
@@ -110,28 +108,24 @@ function keyPressed() {
     if(cont1==0){
       teladeestado=3
     }
-    if(cont1==1){
-      teladeestado==4
-    }
 }
 
  if (keyCode === DOWN_ARROW) {
     if(jj<375)
        jj+=50;
-     cont1+=1
     } else if (keyCode === UP_ARROW) {
     if(jj>175) 
        jj-=50;
-      cont1-=1
+     
   }
   if (keyCode === DOWN_ARROW) {
     if(jj<375)
        jj+=50;
-      cont1+=1
+      
   } else if (keyCode === UP_ARROW) {
     if(jj>175) 
        jj-=50;
-     cont1-=1
+     
   }
 
 }
