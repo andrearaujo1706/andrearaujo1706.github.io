@@ -70,7 +70,7 @@ if(teladeestado == 0){
     teladeestado=0
     close();
   }
-  if(teladeestado==3 && cont1==0){
+  if(teladeestado==3){
     teste()
   }
 }
@@ -113,20 +113,18 @@ function keyPressed() {
  if (keyCode === DOWN_ARROW) {
     if(jj<375)
        jj+=50;
-      cont1+=1
     } else if (keyCode === UP_ARROW) {
     if(jj>175) 
        jj-=50;
-      cont1-=1
   }
   if (keyCode === DOWN_ARROW) {
     if(jj<375)
        jj+=50;
-    cont1+=1
+    
   } else if (keyCode === UP_ARROW) {
     if(jj>175) 
        jj-=50;
-    cont1-=1
+    
   }
 
 }
