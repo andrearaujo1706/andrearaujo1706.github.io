@@ -35,9 +35,9 @@ var j = 420;
 var ii = 260;
 var jj = 175;
 var teladeestado=0
-var teladeestado1=1
+var teladeestado1=0
 var cont=0
-var cont1=6
+var cont1=0
 var start=1
 
 var vida =3
@@ -61,28 +61,27 @@ function setup() {
 function draw() {
 if(teladeestado == 0){
       menu();
-      setas()
   }
   if(teladeestado == 1){
     menu1();
-    setas1()
+    teladeestado1=1
   }
   if(teladeestado == 2){
     teladeestado=0
     close();
   }
-  if(teladeestado1==0){
-    fase1()
+  if(teladeestado==3){
+    teste()
+  }
 }
-  
-}
 
 
 
-function setas() {
+function keyPressed() {
   console.log(keyCode)  
+ 
 
-  if (keyCode === DOWN_ARROW) {
+ if (keyCode === DOWN_ARROW) {
     if(j<470)
        j+=25;
       cont=1
@@ -100,37 +99,40 @@ function setas() {
        j-=25;
     cont=0
   }
+  
 
-  if(keyCode === ENTER ){
+  
+    if (keyCode === DOWN_ARROW) {
+    if(jj<375)
+       jj+=50;
+      cont1=cont1+1
+    } else if (keyCode === UP_ARROW) {
+    if(jj>175) 
+       jj-=50;
+      cont1=cont1-1
+  }
+  if (keyCode === DOWN_ARROW) {
+    if(jj<375)
+       jj+=50;
+    cont1=cont1+1
+  } else if (keyCode === UP_ARROW) {
+    if(jj>175) 
+       jj-=50;
+    cont1=cont1-1
+  }
+
+
+
+
+
+    if(keyCode === ENTER ){
     if(cont==0){
       teladeestado=1
   }
     if(cont==1){
     teladeestado=2
     }
-  }
 }
-
-function setas1(){
-    console.log(keyCode)  
-    if (keyCode === DOWN_ARROW) {
-    if(jj<375)
-       jj+=50;
-      cont1++
-    } else if (keyCode === UP_ARROW) {
-    if(jj>175) 
-       jj-=50;
-      cont1--
-  }
-  if (keyCode === DOWN_ARROW) {
-    if(jj<375)
-       jj+=50;
-    cont1++
-  } else if (keyCode === UP_ARROW) {
-    if(jj>175) 
-       jj-=50;
-    cont1--
-  }
 }
 
 function menu1(){
@@ -179,17 +181,8 @@ function menu(){
   rect(i, j, 400, 36);
 }
 
-function fase1(){
+function teste(){
   background(220);
    text('fase 1', 440, 443);
-}
-
-function fase2(){
-  background(220);
-   text('fase 2', 440, 443);
-}
-function fase3(){
-  background(220);
-   text('fase 3', 440, 443);
 }
 
