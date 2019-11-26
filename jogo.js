@@ -38,6 +38,7 @@ var teladeestado=0
 var cont=0
 var cont1=1
 var start=1
+var b=1
 
 var vida =3
 var morte=0
@@ -81,6 +82,8 @@ if(teladeestado == 0){
 
 function keyPressed() {
   console.log(keyCode)  
+  
+if(b==0){
   if (keyCode === DOWN_ARROW) {
     if(j<470)
        j+=25;
@@ -106,34 +109,8 @@ function keyPressed() {
     if(cont==1){
     teladeestado=2
     }
-    if(cont1==0){
-      teladeestado=3
-      cont1=1
-    }
-    if(ii==275 && jj==400){
-        teladeestado=34
-    }
-}
-
- if (keyCode === DOWN_ARROW) {
-    if(jj<375)
-       jj+=50;
-     
-    } else if (keyCode === UP_ARROW) {
-    if(jj>175) 
-       jj-=50;
-     
   }
-  if (keyCode === DOWN_ARROW) {
-    if(jj<375)
-       jj+=50;
-      
-  } else if (keyCode === UP_ARROW) {
-    if(jj>175) 
-       jj-=50;
-     
-  }
-
+        }
 }
 
 
