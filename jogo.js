@@ -75,6 +75,8 @@ if(teladeestado == 0){
       menu();
   }
   if(teladeestado == 1){
+    x=20
+    y = 465
     cont=0
     vida=3
     b=1
