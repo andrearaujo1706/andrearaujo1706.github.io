@@ -94,6 +94,7 @@ if(teladeestado == 0){
     fase3()
   }
   if(teladeestado==6){
+    cont2=0
     b=2
     morreu()
   }
