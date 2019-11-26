@@ -30,7 +30,7 @@ var yi = 400;
 var opcoes = [0,1];
 var xv1=10, xv2=600,xv3=900;
 var tileSize=50;
-var cont2=0
+var cont2=8
 
 
 var i = 260;
@@ -94,6 +94,7 @@ if(teladeestado == 0){
     fase3()
   }
   if(teladeestado==6){
+    cont2=0
     b=2
     morreu()
   }
