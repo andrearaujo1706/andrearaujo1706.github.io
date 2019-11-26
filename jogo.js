@@ -63,18 +63,15 @@ if(teladeestado == 0){
   }
   if(teladeestado == 1){
     cont=5
+    cont1=0
     menu1();
-
-  }
+}
   if(teladeestado == 2){
     teladeestado=0
     close();
   }
   if(teladeestado==3){
     teste()
-  }
-  if(teladeestado==4){
-    teste1()
   }
 }
 
@@ -107,27 +104,29 @@ function keyPressed() {
     if(cont==1){
     teladeestado=2
     }
-    if(cont1==0){
-      teladeestado=3
-    }
 }
 
  if (keyCode === DOWN_ARROW) {
     if(jj<375)
        jj+=50;
+     cont=5
+     cont1++
     } else if (keyCode === UP_ARROW) {
     if(jj>175) 
        jj-=50;
-     
+     cont=5
+     cont1--
   }
   if (keyCode === DOWN_ARROW) {
     if(jj<375)
        jj+=50;
-      
+      cont=5
+     cont1++
   } else if (keyCode === UP_ARROW) {
     if(jj>175) 
        jj-=50;
-     
+     cont=5
+     cont1--
   }
 
 }
@@ -181,10 +180,12 @@ function menu(){
 }
 
 function teste(){
-  background(220);
-   text('fase 1', 440, 443);
+  if(start==1){
+    teste1()
+  }
 }
+
 function teste1(){
   background(220);
-   text('fase 2', 440, 443);
+   text('fase 1', 440, 443);
 }
