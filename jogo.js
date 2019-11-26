@@ -77,6 +77,7 @@ if(teladeestado == 0){
   if(teladeestado == 1){
     cont2=8
     cont=5
+    vida=3
     b=1
     menu1();
 }
@@ -94,7 +95,6 @@ if(teladeestado == 0){
     fase3()
   }
   if(teladeestado==6){
-    cont2=0
     b=2
     morreu()
   }
@@ -169,20 +169,20 @@ if(keyCode === ENTER ){
      if (keyCode === DOWN_ARROW) {
     if(m<520)
        m+=50;
-      cont2=cont2+1
+      cont2=1
     } else if (keyCode === UP_ARROW) {
     if(m>470) 
        m-=50;
-      cont2=cont2-1
+      cont2=0
   }
   if (keyCode === DOWN_ARROW) {
     if(m<470)
        m+=50;
-    cont2=cont2+1
+    cont2=1
   } else if (keyCode === UP_ARROW) {
     if(m>550) 
        m-=50;
-     cont2=cont2-1
+     cont2=0
   }
   if(keyCode === ENTER ){
     if(cont2==1){
