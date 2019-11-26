@@ -72,6 +72,7 @@ if(teladeestado == 0){
   }
   if(teladeestado==3){
     fase1()
+
   }
    if(teladeestado==4){
     fase2()
@@ -194,10 +195,10 @@ function fase1(){
 
 function fase2(){
   background(220);
-   text('fase 1', 440, 443);
+   text('fase 2', 440, 443);
 }
 function fase3(){
   background(220);
-   text('fase 1', 440, 443);
+   text('fase 3', 440, 443);
 }
 
