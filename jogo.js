@@ -73,6 +73,9 @@ if(teladeestado == 0){
   if(teladeestado==3){
     teste()
   }
+  if(teladeestado==4){
+    teste1()
+  }
 }
 
 
@@ -107,24 +110,28 @@ function keyPressed() {
     if(cont1==0){
       teladeestado=3
     }
-  
+    if(cont1==1){
+      teladeestado==4
+    }
 }
 
  if (keyCode === DOWN_ARROW) {
     if(jj<375)
        jj+=50;
+      cont1+=1
     } else if (keyCode === UP_ARROW) {
     if(jj>175) 
        jj-=50;
+     cont1-=1
   }
   if (keyCode === DOWN_ARROW) {
     if(jj<375)
        jj+=50;
-    
+    cont1+=1
   } else if (keyCode === UP_ARROW) {
     if(jj>175) 
        jj-=50;
-    
+    cont1-=1
   }
 
 }
@@ -181,4 +188,7 @@ function teste(){
   background(220);
    text('fase 1', 440, 443);
 }
-
+function teste1(){
+  background(220);
+   text('fase 1', 440, 443);
+}
