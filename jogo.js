@@ -357,6 +357,7 @@ function vidas(){
     }
     if(vida==0){
       teladeestado=6
+      cont2=0
     }
 }
 
