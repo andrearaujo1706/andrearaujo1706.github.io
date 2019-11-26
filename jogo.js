@@ -62,7 +62,9 @@ if(teladeestado == 0){
       menu();
   }
   if(teladeestado == 1){
+    cont=5
     menu1();
+
   }
   if(teladeestado == 2){
     teladeestado=0
