@@ -90,18 +90,10 @@ function keyPressed() {
        j-=25;
       cont=0
   }
-  if (keyCode === DOWN_ARROW) {
-    if(j<470)
-       j+=25;
-    cont=1
-  } else if (keyCode === UP_ARROW) {
-    if(j>420) 
-       j-=25;
-    cont=0
-  }
   
 
-  
+
+
     if (keyCode === DOWN_ARROW) {
     if(jj<375)
        jj+=50;
