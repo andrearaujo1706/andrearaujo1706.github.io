@@ -39,7 +39,6 @@ var teladeestado1=1
 var cont=0
 var cont1=6
 var start=1
-var key=1
 
 var vida =3
 var morte=0
@@ -62,10 +61,10 @@ function setup() {
 function draw() {
 if(teladeestado == 0){
       menu();
+      setas()
   }
   if(teladeestado == 1){
     menu1();
-    key=2
   }
   if(teladeestado == 2){
     teladeestado=0
@@ -79,9 +78,9 @@ if(teladeestado == 0){
 
 
 
-function keyPressed() {
+function setas() {
   console.log(keyCode)  
-if(key==1){
+
   if (keyCode === DOWN_ARROW) {
     if(j<470)
        j+=25;
@@ -110,7 +109,9 @@ if(key==1){
     }
   }
 }
- if(key==2){
+
+function setas1(){
+    console.log(keyCode)  
     if (keyCode === DOWN_ARROW) {
     if(jj<375)
        jj+=50;
@@ -129,7 +130,6 @@ if(key==1){
        jj-=50;
     cont1--
   }
-}
 }
 
 function menu1(){
