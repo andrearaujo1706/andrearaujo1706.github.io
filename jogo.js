@@ -38,7 +38,7 @@ var teladeestado=0
 var cont=0
 var cont1=1
 var start=1
-var b=1
+var b=0
 
 var vida =3
 var morte=0
