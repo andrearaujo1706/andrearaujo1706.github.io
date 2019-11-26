@@ -60,15 +60,11 @@ function setup() {
 function draw() {
 if(teladeestado == 0){
       menu();
-      ii=261
-      jj=176
   }
   if(teladeestado == 1){
     menu1();
     cont=5
     cont1=0
-    ii=260
-    jj=175
   }
   if(teladeestado == 2){
     teladeestado=0
@@ -111,10 +107,10 @@ function keyPressed() {
     if(cont==1){
     teladeestado=2
     }
-    if(ii==260 && jj==175){
+    if(cont1==0){
       teladeestado=3
     }
-    if(ii==260 && jj==225){
+    if(jj==225){
       teladeestado==4
     }
 }
