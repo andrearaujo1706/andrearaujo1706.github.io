@@ -105,9 +105,6 @@ function keyPressed() {
     teladeestado=2
     }
 }
-}
-function keyPressed(){
-  console.log(keyCode) 
     if (keyCode === DOWN_ARROW) {
     if(jj<375)
        jj+=50;
@@ -131,6 +128,7 @@ function keyPressed(){
     if(cont1==0){
       teladeestado=3
   }
+}
 }
 
 function menu1(){
