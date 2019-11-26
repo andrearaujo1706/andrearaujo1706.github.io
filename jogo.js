@@ -72,14 +72,6 @@ if(teladeestado == 0){
   }
   if(teladeestado==3){
     fase1()
-}else{
-   if(teladeestado==4){
-    fase2()
-  }else{
-    if(teladeestado==5){
-    fase3()
-  }
-  }
 }
 }
 
@@ -114,12 +106,6 @@ function keyPressed() {
     }
     if(cont1==0){
       teladeestado=3
-    }
-    if(cont1==1){
-      teladeestado=4
-    }
-    if(cont1==2){
-      teladeestado=5
     }
 }
     if (keyCode === DOWN_ARROW) {
