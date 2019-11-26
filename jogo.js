@@ -35,7 +35,6 @@ var j = 420;
 var ii = 260;
 var jj = 175;
 var teladeestado=0
-var teladeestado1=0
 var cont=0
 var cont1=0
 var start=1
@@ -64,7 +63,6 @@ if(teladeestado == 0){
   }
   if(teladeestado == 1){
     menu1();
-    teladeestado1=1
   }
   if(teladeestado == 2){
     teladeestado=0
@@ -97,10 +95,16 @@ function keyPressed() {
        j-=25;
     cont=0
   }
-  
+  if(keyCode === ENTER ){
+    if(cont==0){
+      teladeestado=1
+  }
+    if(cont==1){
+    teladeestado=2
+    }
+}
 
-  
-    if (keyCode === DOWN_ARROW) {
+ if (keyCode === DOWN_ARROW) {
     if(jj<375)
        jj+=50;
       cont1=cont1+1
@@ -119,19 +123,9 @@ function keyPressed() {
     cont1=cont1-1
   }
 
-
-
-
-
-    if(keyCode === ENTER ){
-    if(cont==0){
-      teladeestado=1
-  }
-    if(cont==1){
-    teladeestado=2
-    }
 }
-}
+
+
 
 function menu1(){
 image(mapa0, 0, 0, 900, 650);
