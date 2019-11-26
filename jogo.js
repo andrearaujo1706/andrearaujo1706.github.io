@@ -185,7 +185,7 @@ if(keyCode === ENTER ){
         teladeestado=0
     }
     if(cont2==0){
-        teladeestado=3
+        teladeestado=1
     }
   }
 }
