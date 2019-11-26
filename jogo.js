@@ -53,6 +53,9 @@ function preload() {
   v1 = loadImage('img/personagens/vilao1.png');
   v2 = loadImage('img/personagens/vilao1.png');
   v3 = loadImage('img/personagens/vilao1.png');
+  v4 = loadImage('img/personagens/vilao2.png');
+  v5 = loadImage('img/personagens/vilao2.png');
+  v6 = loadImage('img/personagens/vilao2.png');
 }
 function setup() {
   createCanvas(900, 650);
@@ -353,8 +356,158 @@ function moverVilao(){
 }
 
 function fase2(){
-  background(220);
-   text('fase 2', 440, 443);
+  background(200);
+    if(pontuacao==1){
+      fase();
+    }
+
+  
+  fill(100, 50, 0);
+  for (let i = 0; i < map.length; i++) {
+    for (let j = 0; j < map[i].length; j++) {
+      if (map[i][j] != 0) {
+        rect(j * tileSize, i * tileSize, tileSize, tileSize);
+      }
+    }
+  }
+ 
+
+   if (keyIsDown(LEFT_ARROW) && !bateuNoMapa(x-5,y)) {
+      x-=5;
+      
+   }
+   
+
+  if (keyIsDown(RIGHT_ARROW)&& !bateuNoMapa(x+5,y)  ){
+       x+=5;
+       //chao = y-tileSize;
+   }
+  
+  if (keyIsDown(UP_ARROW)&& !bateuNoMapa(x,y-5) ) {
+        //y-=5;  
+        if(y==465){
+          y_teste=1;}
+
+
+  }
+
+  if(y_teste==1){
+    y=y-12;
+    if(y<=300){
+      y_teste=0  
+    }
+  }
+  if(y<465 && y_teste==0){
+    y=y+12;
+  }
+
+ fill(0, 0, 500);
+  
+  fill(0, 0, 500);
+  
+    function bateuNoMapa(a, b) {
+        let bateu=false; 
+        for (var i = 0; i < map.length; i++) {
+            for (var j = 0; j < map[i].length; j++) {
+                 if(map[i][j]==1 && colisao(a,b,j * tileSize,i * tileSize)){
+                     bateu=true;
+                     return bateu;
+                 }
+            }
+        }
+      return bateu;
+    }
+                    
+   function colisao(x1,y1,x2,y2) {
+            if(x1 > x2 + 48)
+                    return false;
+                if(y1 > y2 + 48)
+                    return false;
+                if(x1 + 48 < x2)
+                    return false;
+                if(y1 + 48 < y2)
+                    return false;
+                return true;
+            }
+
+  function fase() {
+    image(mapa2, 0, 0, 900, 650);
+      textSize(25);
+      fill('black');
+      text('Vidas:', 640, 50);
+      vidas()
+    image(prot, x, y, 48,85);
+    moverVilao();
+  }
+
+if(x==xv1 && y<=465){
+  vida=vida-1
+}
+if(x==xv2 && y<=465){
+  vida=vida-1
+}
+if(x==xv3 && y<=465){
+  vida=vida-1
+}
+
+
+
+
+function vidas(){
+    if(vida==3){
+    image(item1, 720, 25, 30, 40);
+    image(item1, 760, 25, 30, 40);
+    image(item1, 800, 25, 30, 40);
+  }
+    if(vida==2){
+    image(item1, 720, 25, 30, 40);
+    image(item1, 760, 25, 30, 40);
+    }
+    if(vida==1){
+      image(item1, 720, 25, 30, 40);
+    }
+    if(vida==0){
+      alert("Score Final: "+"--------"+"\n"+"Você Perdeu!")
+      vida=3
+    }
+}
+
+
+function moverVilao(){
+  
+  if(xv1  <850 && ve1==1){
+    xv1=xv1+2
+  }else{
+    ve1=0
+    xv1=xv1-7
+    if(xv1 <=5){
+      ve1=1;
+    }
+  }
+
+  if(xv2  <850 && ve2==1){
+    xv2=xv2+5
+  }else{
+    ve2=0
+    xv2=xv2-5
+    if(xv2 <=5){
+      ve2=1;
+    }
+  }
+
+  if(xv3  < 850 && ve3==1){
+    xv3=xv3+6
+  }else{
+    ve3=0
+    xv3--
+    if(xv3 <= 5){
+      ve3=1;
+    }
+  }
+  image(v4, xv1, 465, 48,85);
+  image(v5, xv2, 465, 48,85);
+  image(v6, xv3, 465, 48,85);
+}
 }
 
 function fase3(){
