@@ -662,8 +662,8 @@ function moverVilao(){
       ve3=1;
     }
   }
-  image(v7, xv1, 465, 48,85);
-  image(v8, xv2, 465, 48,85);
-  image(v9, xv3, 465, 48,85);
+  image(v7, xv1, 465, 60,85);
+  image(v8, xv2, 465, 60,85);
+  image(v9, xv3, 465, 60,85);
 }
 }
