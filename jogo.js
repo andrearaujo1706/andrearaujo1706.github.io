@@ -73,6 +73,7 @@ if(teladeestado == 0){
       menu();
   }
   if(teladeestado == 1){
+    cont2=8
     cont=5
     b=1
     menu1();
@@ -183,9 +184,11 @@ if(keyCode === ENTER ){
   if(keyCode === ENTER ){
     if(cont2==1){
         teladeestado=0
+        
     }
     if(cont2==0){
         teladeestado=1
+        
     }
   }
 }
