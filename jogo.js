@@ -66,6 +66,8 @@ if(teladeestado == 0){
     cont=5
     b=1
     menu1();
+    fill('black')
+    text('fase 1', 300, 100);
 }
   if(teladeestado == 2){
     teladeestado=0
@@ -116,20 +118,20 @@ if(b==1){
   if (keyCode === DOWN_ARROW) {
     if(jj<375)
        jj+=50;
-      cont1=cont1+1
+      cont1+=1
     } else if (keyCode === UP_ARROW) {
     if(jj>175) 
        jj-=50;
-     cont1=cont1-1
+     cont1-=1
   }
   if (keyCode === DOWN_ARROW) {
     if(jj<375)
        jj+=50;
-      cont1=cont1+1
+      cont1+=1
   } else if (keyCode === UP_ARROW) {
     if(jj>175) 
        jj-=50;
-     cont1=cont1-1
+     cont1-=1
   }
 
 if(keyCode === ENTER ){
