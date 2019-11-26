@@ -66,8 +66,6 @@ if(teladeestado == 0){
     cont=5
     b=1
     menu1();
-    fill('black')
-    text(cont1, 300, 100);
 }
   if(teladeestado == 2){
     teladeestado=0
