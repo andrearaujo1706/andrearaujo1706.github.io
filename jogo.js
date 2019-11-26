@@ -72,15 +72,15 @@ if(teladeestado == 0){
   }
   if(teladeestado==3){
     fase1()
-
-  }
+}else{
    if(teladeestado==4){
     fase2()
-  }
- if(teladeestado==5){
+  }else{
+    if(teladeestado==5){
     fase3()
   }
-
+  }
+}
 }
 
 
