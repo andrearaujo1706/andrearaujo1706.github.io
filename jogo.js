@@ -333,6 +333,9 @@ function fase1(){
        textSize(25);
       fill('black');
       text('Score:', 30, 50);
+        textSize(25);
+      fill('black');
+      text('00000', 110, 53);
       vidas()
     image(prot, x, y, 48,85);
     moverVilao();
@@ -491,6 +494,9 @@ function fase2(){
        textSize(25);
       fill('black');
       text('Score:', 30, 50);
+        textSize(25);
+      fill('black');
+      text('00000', 110, 53);
       vidas()
     image(prot, x, y, 48,85);
     moverVilao();
@@ -649,6 +655,9 @@ function fase3(){
        textSize(25);
       fill('black');
       text('Score:', 30, 50);
+        textSize(25);
+      fill('black');
+      text('00000', 110, 53);
       vidas()
     image(prot, x, y, 48,85);
     moverVilao();
@@ -744,6 +753,8 @@ function morreu(){
   strokeWeight(3);
   rect(p, m, 400, 36);
 
-
+textSize(30);
+      fill('black');
+      text('00000', 450, 150);
   
 }
