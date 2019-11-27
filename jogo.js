@@ -758,4 +758,3 @@ function morreu(){
       text('00000', 400, 200);
   
 }
-}
