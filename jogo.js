@@ -753,8 +753,8 @@ function morreu(){
   strokeWeight(3);
   rect(p, m, 400, 36);
 
-  textSize(30);
+ textSize(30);
       fill('black');
-      text('00000', 400, 200);
+      text('00000', 380, 170);
   
 }
