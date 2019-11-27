@@ -755,6 +755,6 @@ function morreu(){
 
  textSize(30);
       fill('black');
-      text('00000', 380, 170);
+      text('00000', 380, 175);
   
 }
