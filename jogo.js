@@ -375,7 +375,7 @@ if(atirando==true){
   image(bala, xt+10, yt+50, 10,10)
   if(xt>900 ) {
        atirando=false;
-       if(xt<xv1+48 &&xt>=xv1-48){
+       if(xt<xv1 && xt>=xv1){
         h=1
        }
     }
