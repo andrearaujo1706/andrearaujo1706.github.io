@@ -313,6 +313,7 @@ function fase1(){
   if(y<465 && y_teste==0){
     y=y+12;
   }
+  
 
  fill(0, 0, 500);
   
@@ -360,6 +361,7 @@ function fase1(){
     mvilao()
   }
 
+  //TESTANDO A COLISAO COM O INIMIGO
 if(x==xv1 && y<=465){
   vida=vida-1
 }
@@ -368,6 +370,16 @@ if(x==xv2 && y<=465){
 }
 if(x==xv3 && y<=465){
   vida=vida-1
+}
+//testando colisao Ddo tiro no inimigo
+if(xt==xv1 && y<=465){
+  alert("matou um")
+}
+if(xt==xv2 && y<=465){
+  alert("matou mais um")
+}
+if(xt==xv3 && y<=465){
+  alert("matou mais um")
 }
 
 xt=xt+10
