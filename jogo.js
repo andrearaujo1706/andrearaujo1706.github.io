@@ -373,14 +373,14 @@ if(x==xv3 && y<=465){
 }
 //testando colisao do tiro no inimigo
 if(xt==xv1 && y<=465){ 
- alert(matou um)
+ alert("matou um")
     }
    
 if(xt==xv2 && y<=465){
-  alert(matou mais um)
+  alert("matou mais um")
 }
 if(xt==xv3 && y<=465){
- alert(venceu!)
+ alert("venceu!")
 }
 
 xt=xt+10
@@ -463,7 +463,6 @@ function mvilao(){
   }
 }
 
-}
 
 function fase2(){
   background(200);
