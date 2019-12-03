@@ -371,14 +371,13 @@ if(x==xv2 && y<=465){
 if(x==xv3 && y<=465){
   vida=vida-1
 }
-//testando colisao Ddo tiro no inimigo
+//testando colisao do tiro no inimigo
 if(xt==xv1 && y<=465){ 
-  image(item1, 720, 25, 30, 40);
-  image(item1, 760, 25, 30, 40);
+ alert(matou um)
     }
    
 if(xt==xv2 && y<=465){
-   image(v3, xv3, 465, 48,85);
+  alert(matou mais um)
 }
 if(xt==xv3 && y<=465){
  alert(venceu!)
