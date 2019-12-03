@@ -373,7 +373,8 @@ if(x==xv3 && y<=465){
 }
 //testando colisao Ddo tiro no inimigo
 if(xt==xv1 && y<=465){
-  xv1= xv1-1
+ alert("matou um")  
+ 
 }
 if(xt==xv2 && y<=465){
   alert("matou mais um")
