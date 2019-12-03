@@ -207,7 +207,7 @@ if(keyCode === ENTER ){
 }
 
 if(b==3){
-  if(keyCode === BACKSPACE){
+  if(keyCode === ENTER){
   atirando=true;
     xt=x
     yt=y
