@@ -454,7 +454,7 @@ function mvilao(){
   image(v2, xv2, 465, 48,85);
   image(v3, xv3, 465, 48,85);
   }
-  if(h==1){
+  if(xt==xv1 && y<=465){
   image(v2, xv2, 465, 48,85);
   image(v3, xv3, 465, 48,85);
   }
