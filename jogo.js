@@ -31,6 +31,7 @@ var opcoes = [0,1];
 var xv1=10, xv2=600,xv3=900;
 var tileSize=50;
 var cont2=8
+var h=0
 
 
 var i = 260;
@@ -356,6 +357,7 @@ function fase1(){
       vidas()
     image(prot, x, y, 48,85);
     moverVilao();
+    mvilao()
   }
 
 if(x==xv1 && y<=465){
@@ -373,6 +375,9 @@ if(atirando==true){
   image(bala, xt+10, yt+50, 10,10)
   if(xt>900 ) {
        atirando=false;
+       if(xt<xv1+48 &&xt>=xv1-48){
+        h=1
+       }
     }
 }
 
@@ -428,10 +433,23 @@ function moverVilao(){
       ve3=1;
     }
   }
+}
+
+function mvilao(){
+  if(h==0){
   image(v1, xv1, 465, 48,85);
   image(v2, xv2, 465, 48,85);
   image(v3, xv3, 465, 48,85);
+  }
+  if(h==1){
+  image(v2, xv2, 465, 48,85);
+  image(v3, xv3, 465, 48,85);
+  }
+  if(h==3){
+  image(v3, xv3, 465, 48,85);
+  }
 }
+
 }
 
 function fase2(){
