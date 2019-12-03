@@ -368,7 +368,7 @@ if(x==xv3 && y<=465){
 
 xt=xt+10
 if(atirando==true){
-  image(bala, xt, yt-30, 10,10)
+  image(bala, xt, yt+30, 10,10)
   if(xt>900 ) {
        atirando=false;
     }
