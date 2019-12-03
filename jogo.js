@@ -97,9 +97,11 @@ if(teladeestado == 0){
   }
    if(teladeestado==4){
     fase2()
+    b=3
   }
   if(teladeestado==5){
     fase3()
+    b=3
   }
   if(teladeestado==6){
     b=2
@@ -534,7 +536,13 @@ if(x==xv3 && y<=465){
 }
 
 
-
+xt=xt+10
+if(atirando==true){
+  image(bala, xt+10, yt+50, 10,10)
+  if(xt>900 ) {
+       atirando=false;
+    }
+}
 
 function vidas(){
     if(vida==3){
@@ -694,7 +702,13 @@ if(x==xv3 && y<=465){
   vida=vida-1
 }
 
-
+xt=xt+10
+if(atirando==true){
+  image(bala, xt+10, yt+50, 10,10)
+  if(xt>900 ) {
+       atirando=false;
+    }
+}
 
 
 function vidas(){
