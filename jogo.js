@@ -43,9 +43,14 @@ var cont1=0
 var start=1
 var b=0
 
+var xt = x;
+var yt = y;
+var atirando=false;
+
 var vida =3
 var morte=0
 function preload() {
+  bala=loadImage('img/mapa/bala.png')
   mapa0=loadImage('img/mapa/images.jpg')
   item1= loadImage('img/mapa/vida.png')
   mapa = loadImage('img/mapa/mapa.jpg')
@@ -88,6 +93,7 @@ if(teladeestado == 0){
   }
   if(teladeestado==3){
     fase1()
+    b=3
   }
    if(teladeestado==4){
     fase2()
@@ -199,6 +205,15 @@ if(keyCode === ENTER ){
     }
   }
 }
+
+if(b==3){
+  if(keyCode === ENTER){
+  atirando=true;
+    xt=x
+    yt=y
+  }
+}
+
 }
 
 
@@ -351,7 +366,13 @@ if(x==xv3 && y<=465){
   vida=vida-1
 }
 
-
+xt=xt+10
+if(atirando==true){
+  image(bala, xt, yt, 10,10)
+  if(xt>900 ) {
+       atirando=false;
+    }
+}
 
 
 function vidas(){
