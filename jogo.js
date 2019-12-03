@@ -373,14 +373,14 @@ if(x==xv3 && y<=465){
 }
 //testando colisao do tiro no inimigo
 if(xt==xv1 && y<=465){ 
- alert("matou um")
+    h==0
     }
    
 if(xt==xv2 && y<=465){
-  alert("matou mais um")
+   h==1
 }
 if(xt==xv3 && y<=465){
- alert("venceu!")
+   h==3
 }
 
 xt=xt+10
