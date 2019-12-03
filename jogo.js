@@ -373,11 +373,10 @@ if(x==xv3 && y<=465){
 }
 //testando colisao Ddo tiro no inimigo
 if(xt==xv1 && y<=465){
- alert("matou um")  
- 
+  h=(h==1)   
 }
 if(xt==xv2 && y<=465){
-  alert("matou mais um")
+  h=(h==3)
 }
 if(xt==xv3 && y<=465){
   alert("matou mais um")
@@ -454,7 +453,7 @@ function mvilao(){
   image(v2, xv2, 465, 48,85);
   image(v3, xv3, 465, 48,85);
   }
-  if(xt==xv1 && y<=465){
+  if(h==1){
   image(v2, xv2, 465, 48,85);
   image(v3, xv3, 465, 48,85);
   }
