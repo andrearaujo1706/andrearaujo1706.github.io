@@ -51,24 +51,24 @@ var atirando=false;
 var vida =3
 var morte=0
 function preload() {
-  bala=loadImage('img/mapa/bala.png')
-  mapa0=loadImage('img/mapa/images.jpg')
-  item1= loadImage('img/mapa/vida.png')
-  mapa = loadImage('img/mapa/mapa.jpg')
-  mapa1 = loadImage('img/mapa/mapa1.jpg');
-  mapa2 = loadImage('img/mapa/mapa2.jpg');
-  mapa3 = loadImage('img/mapa/mapa3.jpg');
-  morte1= loadImage('img/mapa/morte.jpg')
-  prot = loadImage('img/personagens/prot.png');
-  v1 = loadImage('img/personagens/vilao1.png');
-  v2 = loadImage('img/personagens/vilao1.png');
-  v3 = loadImage('img/personagens/vilao1.png');
-  v4 = loadImage('img/personagens/vilao2.png');
-  v5 = loadImage('img/personagens/vilao2.png');
-  v6 = loadImage('img/personagens/vilao2.png');
-  v7 = loadImage('img/personagens/vilao3.png');
-  v8 = loadImage('img/personagens/vilao3.png');
-  v9 = loadImage('img/personagens/vilao3.png');
+  bala=loadImage('imgmapabala.png')
+  mapa0=loadImage('imgmapaimages.jpg')
+  item1= loadImage('imgmapavida.png')
+  mapa = loadImage('imgmapamapa.jpg')
+  mapa1 = loadImage('imgmapamapa1.jpg');
+  mapa2 = loadImage('imgmapamapa2.jpg');
+  mapa3 = loadImage('imgmapamapa3.jpg');
+  morte1= loadImage('imgmapamorte.jpg')
+  prot = loadImage('imgpersonagensprot.png');
+  v1 = loadImage('imgpersonagensvilao1.png');
+  v2 = loadImage('imgpersonagensvilao1.png');
+  v3 = loadImage('imgpersonagensvilao1.png');
+  v4 = loadImage('imgpersonagensvilao2.png');
+  v5 = loadImage('imgpersonagensvilao2.png');
+  v6 = loadImage('imgpersonagensvilao2.png');
+  v7 = loadImage('imgpersonagensvilao3.png');
+  v8 = loadImage('imgpersonagensvilao3.png');
+  v9 = loadImage('imgpersonagensvilao3.png');
 }
 function setup() {
   createCanvas(900, 650);
@@ -116,20 +116,20 @@ function keyPressed() {
   console.log(keyCode)
   if(b==0){
   if (keyCode === DOWN_ARROW) {
-    if(j<470)
+    if(j470)
        j+=25;
       cont=1
     } else if (keyCode === UP_ARROW) {
-    if(j>420) 
+    if(j420) 
        j-=25;
       cont=0
   }
   if (keyCode === DOWN_ARROW) {
-    if(j<470)
+    if(j470)
        j+=25;
     cont=1
   } else if (keyCode === UP_ARROW) {
-    if(j>420) 
+    if(j420) 
        j-=25;
     cont=0
   }
@@ -144,24 +144,24 @@ function keyPressed() {
 }
 
 if(b==1){
-  if (keyCode === DOWN_ARROW && cont1<=3) {
-     if(jj<375){
+  if (keyCode === DOWN_ARROW && cont1=3) {
+     if(jj375){
        jj+=50;
        cont1=cont1+1
       }
     }
 
-     else if (keyCode === UP_ARROW && cont1>0) {
-    if(jj>175) 
+     else if (keyCode === UP_ARROW && cont10) {
+    if(jj175) 
        jj-=50;
      cont1=cont1-1
   }
-  if (keyCode === DOWN_ARROW && cont1<=3) {
-    if(jj<375)
+  if (keyCode === DOWN_ARROW && cont1=3) {
+    if(jj375)
        jj+=50;
       cont1=cont1+1
-  } else if (keyCode === UP_ARROW && cont1>0) {
-    if(jj>175) 
+  } else if (keyCode === UP_ARROW && cont10) {
+    if(jj175) 
        jj-=50;
      cont1=cont1-1
   }
@@ -180,20 +180,20 @@ if(keyCode === ENTER ){
  }
  if(b==2){
      if (keyCode === DOWN_ARROW) {
-    if(m<520)
+    if(m520)
        m+=50;
       cont2=1
     } else if (keyCode === UP_ARROW) {
-    if(m>470) 
+    if(m470) 
        m-=50;
       cont2=0
   }
   if (keyCode === DOWN_ARROW) {
-    if(m<470)
+    if(m470)
        m+=50;
     cont2=1
   } else if (keyCode === UP_ARROW) {
-    if(m>550) 
+    if(m550) 
        m-=50;
      cont2=0
   }
@@ -226,7 +226,7 @@ image(mapa0, 0, 0, 900, 650);
   fill('white');
   stroke('black');
   strokeWeight(1);
-  //esquerda/direita,cima/baixo,tamanho,altura,bordas
+  esquerdadireita,cimabaixo,tamanho,altura,bordas
   rect(260, 175, 400, 60, 10);
   rect(260, 275, 400, 60, 10);
   rect(260, 375, 400, 60, 10);
@@ -250,7 +250,7 @@ function menu(){
   fill('white');
   stroke('black');
   strokeWeight(1);
-  //esquerda/direita,cima/baixo,tamanho,altura,bordas
+  esquerdadireita,cimabaixo,tamanho,altura,bordas
   rect(260, 420, 400, 35, 10);
   rect(260, 470, 400, 35, 10);
 
@@ -276,10 +276,10 @@ function fase1(){
 
   
   fill(100, 50, 0);
-  for (let i = 0; i < map.length; i++) {
-    for (let j = 0; j < map[i].length; j++) {
+  for (let i = 0; i  map.length; i++) {
+    for (let j = 0; j  map[i].length; j++) {
       if (map[i][j] != 0) {
-        rect(j * tileSize, i * tileSize, tileSize, tileSize);
+        rect(j  tileSize, i  tileSize, tileSize, tileSize);
       }
     }
   }
@@ -293,11 +293,11 @@ function fase1(){
 
   if (keyIsDown(RIGHT_ARROW)&& !bateuNoMapa(x+5,y)  ){
        x+=5;
-       //chao = y-tileSize;
+       chao = y-tileSize;
    }
   
   if (keyIsDown(UP_ARROW)&& !bateuNoMapa(x,y-5) ) {
-        //y-=5;  
+        y-=5;  
         if(y==465){
           y_teste=1;}
 
@@ -306,14 +306,13 @@ function fase1(){
 
   if(y_teste==1){
     y=y-12;
-    if(y<=300){
+    if(y=300){
       y_teste=0  
     }
   }
-  if(y<465 && y_teste==0){
+  if(y465 && y_teste==0){
     y=y+12;
   }
-  
 
  fill(0, 0, 500);
   
@@ -321,9 +320,9 @@ function fase1(){
   
     function bateuNoMapa(a, b) {
         let bateu=false; 
-        for (var i = 0; i < map.length; i++) {
-            for (var j = 0; j < map[i].length; j++) {
-                 if(map[i][j]==1 && colisao(a,b,j * tileSize,i * tileSize)){
+        for (var i = 0; i  map.length; i++) {
+            for (var j = 0; j  map[i].length; j++) {
+                 if(map[i][j]==1 && colisao(a,b,j  tileSize,i  tileSize)){
                      bateu=true;
                      return bateu;
                  }
@@ -333,13 +332,13 @@ function fase1(){
     }
                     
    function colisao(x1,y1,x2,y2) {
-            if(x1 > x2 + 48)
+            if(x1  x2 + 48)
                     return false;
-                if(y1 > y2 + 48)
+                if(y1  y2 + 48)
                     return false;
-                if(x1 + 48 < x2)
+                if(x1 + 48  x2)
                     return false;
-                if(y1 + 48 < y2)
+                if(y1 + 48  y2)
                     return false;
                 return true;
             }
@@ -348,10 +347,10 @@ function fase1(){
     image(mapa1, 0, 0, 900, 650);
       textSize(25);
       fill('black');
-      text('Vidas:', 640, 50);
+      text('Vidas', 640, 50);
        textSize(25);
       fill('black');
-      text('Score:', 30, 50);
+      text('Score', 30, 50);
         textSize(25);
       fill('black');
       text('00000', 110, 53);
@@ -361,34 +360,22 @@ function fase1(){
     mvilao()
   }
 
-  //TESTANDO A COLISAO COM O INIMIGO
-if(x==xv1 && y<=465){
+if(x==xv1 && y=465){
   vida=vida-1
 }
-if(x==xv2 && y<=465){
+if(x==xv2 && y=465){
   vida=vida-1
 }
-if(x==xv3 && y<=465){
+if(x==xv3 && y=465){
   vida=vida-1
-}
-//testando colisao do tiro no inimigo
-if(xt==xv1 && y<=465){ 
-    h==0
-    }
-   
-if(xt==xv2 && y<=465){
-   h==1
-}
-if(xt==xv3 && y<=465){
-   h==3
 }
 
 xt=xt+10
 if(atirando==true){
   image(bala, xt+10, yt+50, 10,10)
-  if(xt>900 ) {
+  if(xt900 ) {
        atirando=false;
-       if(xt<xv1 && xt>=xv1){
+       if(xtxv1 && xt=xv1){
         h=1
        }
     }
@@ -417,32 +404,32 @@ function vidas(){
 
 function moverVilao(){
   
-  if(xv1  <850 && ve1==1){
+  if(xv1  850 && ve1==1){
     xv1=xv1+2
   }else{
     ve1=0
     xv1=xv1-7
-    if(xv1 <=5){
+    if(xv1 =5){
       ve1=1;
     }
   }
 
-  if(xv2  <850 && ve2==1){
+  if(xv2  850 && ve2==1){
     xv2=xv2+5
   }else{
     ve2=0
     xv2=xv2-5
-    if(xv2 <=5){
+    if(xv2 =5){
       ve2=1;
     }
   }
 
-  if(xv3  < 850 && ve3==1){
+  if(xv3   850 && ve3==1){
     xv3=xv3+6
   }else{
     ve3=0
     xv3--
-    if(xv3 <= 5){
+    if(xv3 = 5){
       ve3=1;
     }
   }
@@ -463,6 +450,7 @@ function mvilao(){
   }
 }
 
+}
 
 function fase2(){
   background(200);
@@ -472,10 +460,10 @@ function fase2(){
 
   
   fill(100, 50, 0);
-  for (let i = 0; i < map.length; i++) {
-    for (let j = 0; j < map[i].length; j++) {
+  for (let i = 0; i  map.length; i++) {
+    for (let j = 0; j  map[i].length; j++) {
       if (map[i][j] != 0) {
-        rect(j * tileSize, i * tileSize, tileSize, tileSize);
+        rect(j  tileSize, i  tileSize, tileSize, tileSize);
       }
     }
   }
@@ -489,11 +477,11 @@ function fase2(){
 
   if (keyIsDown(RIGHT_ARROW)&& !bateuNoMapa(x+5,y)  ){
        x+=5;
-       //chao = y-tileSize;
+       chao = y-tileSize;
    }
   
   if (keyIsDown(UP_ARROW)&& !bateuNoMapa(x,y-5) ) {
-        //y-=5;  
+        y-=5;  
         if(y==465){
           y_teste=1;}
 
@@ -502,11 +490,11 @@ function fase2(){
 
   if(y_teste==1){
     y=y-12;
-    if(y<=300){
+    if(y=300){
       y_teste=0  
     }
   }
-  if(y<465 && y_teste==0){
+  if(y465 && y_teste==0){
     y=y+12;
   }
 
@@ -516,9 +504,9 @@ function fase2(){
   
     function bateuNoMapa(a, b) {
         let bateu=false; 
-        for (var i = 0; i < map.length; i++) {
-            for (var j = 0; j < map[i].length; j++) {
-                 if(map[i][j]==1 && colisao(a,b,j * tileSize,i * tileSize)){
+        for (var i = 0; i  map.length; i++) {
+            for (var j = 0; j  map[i].length; j++) {
+                 if(map[i][j]==1 && colisao(a,b,j  tileSize,i  tileSize)){
                      bateu=true;
                      return bateu;
                  }
@@ -528,13 +516,13 @@ function fase2(){
     }
                     
    function colisao(x1,y1,x2,y2) {
-            if(x1 > x2 + 48)
+            if(x1  x2 + 48)
                     return false;
-                if(y1 > y2 + 48)
+                if(y1  y2 + 48)
                     return false;
-                if(x1 + 48 < x2)
+                if(x1 + 48  x2)
                     return false;
-                if(y1 + 48 < y2)
+                if(y1 + 48  y2)
                     return false;
                 return true;
             }
@@ -543,10 +531,10 @@ function fase2(){
     image(mapa3, 0, 0, 900, 650);
       textSize(25);
       fill('black');
-      text('Vidas:', 640, 50);
+      text('Vidas', 640, 50);
        textSize(25);
       fill('black');
-      text('Score:', 30, 50);
+      text('Score', 30, 50);
         textSize(25);
       fill('black');
       text('00000', 110, 53);
@@ -555,13 +543,13 @@ function fase2(){
     moverVilao();
   }
 
-if(x==xv1 && y<=465){
+if(x==xv1 && y=465){
   vida=vida-1
 }
-if(x==xv2 && y<=465){
+if(x==xv2 && y=465){
   vida=vida-1
 }
-if(x==xv3 && y<=465){
+if(x==xv3 && y=465){
   vida=vida-1
 }
 
@@ -569,7 +557,7 @@ if(x==xv3 && y<=465){
 xt=xt+10
 if(atirando==true){
   image(bala, xt+10, yt+50, 10,10)
-  if(xt>900 ) {
+  if(xt900 ) {
        atirando=false;
     }
 }
@@ -596,32 +584,32 @@ function vidas(){
 
 function moverVilao(){
   
-  if(xv1  <850 && ve1==1){
+  if(xv1  850 && ve1==1){
     xv1=xv1+2
   }else{
     ve1=0
     xv1=xv1-7
-    if(xv1 <=5){
+    if(xv1 =5){
       ve1=1;
     }
   }
 
-  if(xv2  <850 && ve2==1){
+  if(xv2  850 && ve2==1){
     xv2=xv2+5
   }else{
     ve2=0
     xv2=xv2-5
-    if(xv2 <=5){
+    if(xv2 =5){
       ve2=1;
     }
   }
 
-  if(xv3  < 850 && ve3==1){
+  if(xv3   850 && ve3==1){
     xv3=xv3+6
   }else{
     ve3=0
     xv3--
-    if(xv3 <= 5){
+    if(xv3 = 5){
       ve3=1;
     }
   }
@@ -639,10 +627,10 @@ function fase3(){
 
   
   fill(100, 50, 0);
-  for (let i = 0; i < map.length; i++) {
-    for (let j = 0; j < map[i].length; j++) {
+  for (let i = 0; i  map.length; i++) {
+    for (let j = 0; j  map[i].length; j++) {
       if (map[i][j] != 0) {
-        rect(j * tileSize, i * tileSize, tileSize, tileSize);
+        rect(j  tileSize, i  tileSize, tileSize, tileSize);
       }
     }
   }
@@ -656,11 +644,11 @@ function fase3(){
 
   if (keyIsDown(RIGHT_ARROW)&& !bateuNoMapa(x+5,y)  ){
        x+=5;
-       //chao = y-tileSize;
+       chao = y-tileSize;
    }
   
   if (keyIsDown(UP_ARROW)&& !bateuNoMapa(x,y-5) ) {
-        //y-=5;  
+        y-=5;  
         if(y==465){
           y_teste=1;}
 
@@ -669,11 +657,11 @@ function fase3(){
 
   if(y_teste==1){
     y=y-12;
-    if(y<=300){
+    if(y=300){
       y_teste=0  
     }
   }
-  if(y<465 && y_teste==0){
+  if(y465 && y_teste==0){
     y=y+12;
   }
 
@@ -683,9 +671,9 @@ function fase3(){
   
     function bateuNoMapa(a, b) {
         let bateu=false; 
-        for (var i = 0; i < map.length; i++) {
-            for (var j = 0; j < map[i].length; j++) {
-                 if(map[i][j]==1 && colisao(a,b,j * tileSize,i * tileSize)){
+        for (var i = 0; i  map.length; i++) {
+            for (var j = 0; j  map[i].length; j++) {
+                 if(map[i][j]==1 && colisao(a,b,j  tileSize,i  tileSize)){
                      bateu=true;
                      return bateu;
                  }
@@ -695,13 +683,13 @@ function fase3(){
     }
                     
    function colisao(x1,y1,x2,y2) {
-            if(x1 > x2 + 48)
+            if(x1  x2 + 48)
                     return false;
-                if(y1 > y2 + 48)
+                if(y1  y2 + 48)
                     return false;
-                if(x1 + 48 < x2)
+                if(x1 + 48  x2)
                     return false;
-                if(y1 + 48 < y2)
+                if(y1 + 48  y2)
                     return false;
                 return true;
             }
@@ -710,10 +698,10 @@ function fase3(){
     image(mapa2, 0, 0, 900, 650);
       textSize(25);
       fill('black');
-      text('Vidas:', 640, 50);
+      text('Vidas', 640, 50);
        textSize(25);
       fill('black');
-      text('Score:', 30, 50);
+      text('Score', 30, 50);
         textSize(25);
       fill('black');
       text('00000', 110, 53);
@@ -722,20 +710,20 @@ function fase3(){
     moverVilao();
   }
 
-if(x==xv1 && y<=465){
+if(x==xv1 && y=465){
   vida=vida-1
 }
-if(x==xv2 && y<=465){
+if(x==xv2 && y=465){
   vida=vida-1
 }
-if(x==xv3 && y<=465){
+if(x==xv3 && y=465){
   vida=vida-1
 }
 
 xt=xt+10
 if(atirando==true){
   image(bala, xt+10, yt+50, 10,10)
-  if(xt>900 ) {
+  if(xt900 ) {
        atirando=false;
     }
 }
@@ -763,32 +751,32 @@ function vidas(){
 
 function moverVilao(){
   
-  if(xv1  <850 && ve1==1){
+  if(xv1  850 && ve1==1){
     xv1=xv1+2
   }else{
     ve1=0
     xv1=xv1-7
-    if(xv1 <=5){
+    if(xv1 =5){
       ve1=1;
     }
   }
 
-  if(xv2  <850 && ve2==1){
+  if(xv2  850 && ve2==1){
     xv2=xv2+5
   }else{
     ve2=0
     xv2=xv2-5
-    if(xv2 <=5){
+    if(xv2 =5){
       ve2=1;
     }
   }
 
-  if(xv3  < 850 && ve3==1){
+  if(xv3   850 && ve3==1){
     xv3=xv3+6
   }else{
     ve3=0
     xv3--
-    if(xv3 <= 5){
+    if(xv3 = 5){
       ve3=1;
     }
   }
@@ -802,7 +790,7 @@ function morreu(){
  fill('white');
   stroke('black');
   strokeWeight(1);
-  //esquerda/direita,cima/baixo,tamanho,altura,bordas
+  esquerdadireita,cimabaixo,tamanho,altura,bordas
   rect(260, 470, 400, 35, 10);
   rect(260, 520, 400, 35, 10);
 
