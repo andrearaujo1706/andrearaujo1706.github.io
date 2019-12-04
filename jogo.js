@@ -31,7 +31,6 @@ var opcoes = [0,1];
 var xv1=10, xv2=600,xv3=900;
 var tileSize=50;
 var cont2=8
-var h=0
 
 
 var i = 260;
@@ -44,14 +43,9 @@ var cont1=0
 var start=1
 var b=0
 
-var xt = x;
-var yt = y;
-var atirando=false;
-
 var vida =3
 var morte=0
 function preload() {
-  bala=loadImage('img/mapa/bala.png')
   mapa0=loadImage('img/mapa/images.jpg')
   item1= loadImage('img/mapa/vida.png')
   mapa = loadImage('img/mapa/mapa.jpg')
@@ -94,15 +88,12 @@ if(teladeestado == 0){
   }
   if(teladeestado==3){
     fase1()
-    b=3
   }
    if(teladeestado==4){
     fase2()
-    b=3
   }
   if(teladeestado==5){
     fase3()
-    b=3
   }
   if(teladeestado==6){
     b=2
@@ -208,15 +199,6 @@ if(keyCode === ENTER ){
     }
   }
 }
-
-if(b==3){
-  if(keyCode === ENTER){
-  atirando=true;
-    xt=x
-    yt=y
-  }
-}
-
 }
 
 
@@ -357,7 +339,6 @@ function fase1(){
       vidas()
     image(prot, x, y, 48,85);
     moverVilao();
-    mvilao()
   }
 
 if(x==xv1 && y<=465){
@@ -370,13 +351,7 @@ if(x==xv3 && y<=465){
   vida=vida-1
 }
 
-xt=xt+10
-if(atirando==true){
-  image(bala, xt+10, yt+50, 10,10)
-  if(xt>900 ) {
-       atirando=false;
-    }
-}
+
 
 
 function vidas(){
@@ -430,23 +405,10 @@ function moverVilao(){
       ve3=1;
     }
   }
-}
-
-function mvilao(){
-  if(h==0){
   image(v1, xv1, 465, 48,85);
   image(v2, xv2, 465, 48,85);
   image(v3, xv3, 465, 48,85);
-  }
-  if(h==1){
-  image(v2, xv2, 465, 48,85);
-  image(v3, xv3, 465, 48,85);
-  }
-  if(h==3){
-  image(v3, xv3, 465, 48,85);
-  }
 }
-
 }
 
 function fase2(){
@@ -551,13 +513,7 @@ if(x==xv3 && y<=465){
 }
 
 
-xt=xt+10
-if(atirando==true){
-  image(bala, xt+10, yt+50, 10,10)
-  if(xt>900 ) {
-       atirando=false;
-    }
-}
+
 
 function vidas(){
     if(vida==3){
@@ -717,13 +673,7 @@ if(x==xv3 && y<=465){
   vida=vida-1
 }
 
-xt=xt+10
-if(atirando==true){
-  image(bala, xt+10, yt+50, 10,10)
-  if(xt>900 ) {
-       atirando=false;
-    }
-}
+
 
 
 function vidas(){
